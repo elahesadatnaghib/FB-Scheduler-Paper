@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+\begin{document}
+\title{Proposing a feature-based scheduler for the Large Synoptic Survey Telescope}
+\maketitle
+%\begin{multicols}{2}
+\section{Introduction} \label{sec:intro}
+
+\begin{itemize}
+\item Challenges of scheduling a telescope in general
+\item Review Spike (Hubble space telescope scheduler) \cite{johnston1994spike}, Look-ahead technique for space telescope scheduling \cite{sadeh1991look}, minimizing conflicts \cite{minton1992minimizing}
+\item Transition from space telescope to ground-based telescope : (1) how constraints are different, (2) why there hasn't been much work for ground based scheduling \textit{(if that's true)}(not fast enough not expensive enough, accessible for human intervention, narrow ranged mission objectives)
+\item Review the scheduler of recent comparable ground-based telescopes (E-ELT, and ?, ?)
+\item LSST specifications and general desirables, why lsst needs an automated scheduling approach (it's expensive, fast, and has conflicting objectives)
+\item Characteristics of a scheduler for a ground-based telescope (computational aspects, controllable for science measures, responsive to the weather's unpredictable changes)
+\item Review Opsim scheduler \cite{delgado2016lsst}
+\item What Feature-based scheduler has to offer
+\end{itemize}
+ 
+ 
+\section{Scheduling framework}\label{sec_SM}
+\textit{This section is planned to be written in the full extent, if it became unnecessarily long, we can always use it for the other paper, and summarize it here}
+\begin{itemize}
+\item Markovian representation
+\item Optimality conditions (history and future independence)
+\item Measurability conditions (on the sigma algebra of the decision making process)
+\item Optimal structure (min cost(i,f)), Linear/quadratic structure of cost
+\item Reduced optimization problem from policy to vector
+\item Optimizer
+\item Challenges to reach optimality (features would not contain all the information, cost function is structured, optimization is non-linear)
+\end{itemize}
+
+
+\section{Region-Dependent Basis function } \label{subsec-BF}
+\textit{Illustrate that a number of simply designed basis functions can provide the scheduler with fine and tunable behavior (also in the abstract)}\\
+\subsection{Basis Functions common values}
+\textit{this section is going to be around 8 pages long, we might as well publish the details in a tech report and then cite it here}\\
+Different regions of the sky require different visit and revisit constraints and priorities. Therefore, to evaluate a cost of operation for fields of each region there are different basis functions, that at the same time are required to be scaled appropriately, so that there will be no priority given to a certain region only due to the design of the basis functions. In this section we introduce a set of functions that are shared among the basis functions of the different regions, to provide a similar base value for all of the regions.
+ 
+\section{Scheduler optimization}
+\textit{Demonstrate how much the optimization part matters with the results of applying the solutions of earlier iterations}
+\subsection{Differential Evolution}
+
+\subsection{Objective Function}
+
+\section{Simulation Results}\label{sec_sim}
+\textit{count diagrams, Open shutter fraction, meridian observation}
+\section{Discussion}
+\textit{In line with the amount of telescope's time/money it would save}
+
+
+
+
+\medskip
+
+\newpage 
+\bibliographystyle{unsrt}
+%\bibliography{/Users/elahesadatnaghib/Dropbox/Graduate/Research/Princeton/Publications/references}
+\bibliography{/Users/enaghib/Dropbox/Graduate/Research/Princeton/Publications/references}
+
+%\end {multicols}
+\end{document}
+
+
+
+
