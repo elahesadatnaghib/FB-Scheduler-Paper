@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 APR 2018 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 APR 2018 15:03
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**FBDE.tex
+**FBDE
 (./FBDE.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -24,20 +23,20 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -186,8 +185,8 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -217,8 +216,8 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -241,14 +240,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
@@ -256,8 +255,8 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
 \c@tracingmulticols=\count88
 \mult@box=\box26
 \multicol@leftmargin=\dimen104
@@ -305,24 +304,24 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \colbreak@box=\box51
 \mc@col@check@num=\count96
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen113
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen114
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count97
@@ -363,22 +362,22 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/bbold/bbold.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbold/bbold.sty
 Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks21
 \thm@bodyfont=\toks22
 \thm@headfont=\toks23
@@ -389,11 +388,11 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip50
 \dth@everypar=\toks26
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen122
 \extrarowheight=\dimen123
 \NC@list=\toks27
@@ -408,14 +407,14 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count109
 \TX@ftn=\toks28
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -456,31 +455,31 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks29
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen129
 \Hy@linkcounter=\count110
 \Hy@pagecounter=\count111
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count112
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
@@ -493,7 +492,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count113
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -518,46 +517,46 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count118
 \c@bookmark@seq@number=\count119
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip53
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count120
 ))
 \Gin@req@height=\dimen133
 \Gin@req@width=\dimen134
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen135
@@ -577,7 +576,20 @@ Package caption Info: hyperref package is loaded.
 \c@prop=\count124
 \c@defn=\count125
 
-(./FBDE.aux)
+(./FBDE.aux
+
+LaTeX Warning: Label `fig:sfig1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sfig1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sfig2' multiply defined.
+
+)
 \openout1 = `FBDE.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -595,20 +607,20 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 \AtBeginShipoutBox=\box54
- (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
 Package hyperref Info: Link coloring ON on input line 40.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count126
@@ -622,7 +634,7 @@ LaTeX Info: Redefining \nameref on input line 40.
 \openout3 = `FBDE.out'.
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
 \scratchdimen=\dimen142
@@ -635,10 +647,10 @@ LaTeX Info: Redefining \nameref on input line 40.
 \MPnumerator=\count131
 \makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks31
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -646,7 +658,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -654,12 +666,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Overfull \hbox (39.13327pt too wide) in paragraph at lines 49--49
@@ -673,107 +685,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `tyson2002large' on page 2 undefined on input line 88.
-
-
-LaTeX Warning: Citation `ivezic2008large' on page 2 undefined on input line 90.
-
-
-
-LaTeX Warning: Citation `nowakovski1999using' on page 2 undefined on input line
- 92.
-
-
-LaTeX Warning: Citation `johnston1994spike' on page 2 undefined on input line 9
-2.
-
-
-LaTeX Warning: Citation `muscettola1995automating' on page 2 undefined on input
- line 92.
-
-
-LaTeX Warning: Citation `nelson1985design' on page 2 undefined on input line 96
-.
-
-
-LaTeX Warning: Citation `shetrone2007ten' on page 2 undefined on input line 96.
-
-
-[2]
-
-LaTeX Warning: Citation `steele1997control' on page 3 undefined on input line 9
-8.
-
-
-LaTeX Warning: Citation `brink2008salt' on page 3 undefined on input line 100.
-
-
-LaTeX Warning: Citation `wootten2003atacama' on page 3 undefined on input line 
-100.
-
-
-LaTeX Warning: Citation `alexander2017enabling' on page 3 undefined on input li
-ne 100.
-
-
-LaTeX Warning: Citation `delgado2016lsst' on page 3 undefined on input line 100
-.
-
-
-LaTeX Warning: Citation `naghib2016feature' on page 3 undefined on input line 1
-00.
-
-
-LaTeX Warning: Reference `sec_SM' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec_Markov' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec_Markov_approx' on page 3 undefined on input line 
-102.
-
-
-LaTeX Warning: Reference `sec_opt' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec_lsst_problem' on page 3 undefined on input line 1
-02.
-
-
-LaTeX Warning: Reference `sec_lsst_opt' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec_comp' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec_conclusion' on page 3 undefined on input line 102
-.
-
-[3]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
-
-
-LaTeX Warning: Reference `sec_sim_cont' on page 4 undefined on input line 118.
-
-[4]
+ [4]
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 123
 .
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Try loading font information for U+bbold on input line 123.
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/bbold/Ubbold.fd) [5] [6]
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbold/Ubbold.fd) [5] [6]
 Overfull \hbox (72.03633pt too wide) detected at line 216
 [][] []
  []
@@ -800,96 +731,12 @@ T1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ([])) = [] \OML/cmm
 95 ) [] \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ([])\OML/cmm/m/it/10.95 :
  []
 
-
-LaTeX Warning: Reference `equ_proof1' on page 7 undefined on input line 245.
-
 [7]
 Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
-
-LaTeX Warning: Reference `equ_proof2' on page 8 undefined on input line 267.
-
-
-LaTeX Warning: Reference `equ_opt_pol' on page 8 undefined on input line 267.
-
-
-LaTeX Warning: Reference `prop_main' on page 8 undefined on input line 273.
-
-
-LaTeX Warning: Reference `equ_opt1' on page 8 undefined on input line 273.
-
-
-LaTeX Warning: Reference `prop_main' on page 8 undefined on input line 280.
-
-
-LaTeX Warning: Reference `equ_opt1' on page 8 undefined on input line 280.
-
-[8]
-
-LaTeX Warning: Reference `equ_opt_pol' on page 9 undefined on input line 286.
-
-
-LaTeX Warning: Reference `equ_approx_pol' on page 9 undefined on input line 307
-.
-
-
-LaTeX Warning: Reference `equ_opt3' on page 9 undefined on input line 307.
-
-
-LaTeX Warning: Reference `equ_phi' on page 9 undefined on input line 311.
-
-[9]
-
-LaTeX Warning: Reference `equ_learning2' on page 10 undefined on input line 321
-.
-
-
-LaTeX Warning: Reference `equ_approx_pol' on page 10 undefined on input line 33
-0.
-
-
-LaTeX Warning: Reference `equ_learning2' on page 10 undefined on input line 330
-.
-
-
-LaTeX Warning: Reference `equ_learning2' on page 10 undefined on input line 332
-.
-
-
-LaTeX Warning: Reference `equ_learning2' on page 10 undefined on input line 339
-.
-
-
-LaTeX Warning: Citation `tsitsiklis1997analysis' on page 10 undefined on input 
-line 348.
-
-
-LaTeX Warning: Citation `tesauro1995temporal' on page 10 undefined on input lin
-e 348.
-
-
-LaTeX Warning: Reference `sec_lsst_problem' on page 10 undefined on input line 
-351.
-
-[10]
-
-LaTeX Warning: Reference `equ_opt3' on page 11 undefined on input line 354.
-
-
-LaTeX Warning: Citation `naghib2016entropic' on page 11 undefined on input line
- 362.
-
-
-LaTeX Warning: Citation `storn1997differential' on page 11 undefined on input l
-ine 362.
-
-
-LaTeX Warning: Reference `fig_proposals' on page 11 undefined on input line 367
-.
-
-<Figures/proposals.jpg, id=92, 250.7769pt x 137.5539pt>
+[8] [9] [10] <Figures/proposals.jpg, id=223, 250.7769pt x 137.5539pt>
 File: Figures/proposals.jpg Graphic file (type jpg)
 
 <use Figures/proposals.jpg>
@@ -897,96 +744,17 @@ Package pdftex.def Info: Figures/proposals.jpg used on input line 371.
 (pdftex.def)             Requested size: 273.14922pt x 149.8405pt.
 
 
-LaTeX Warning: Citation `jones2017large' on page 11 undefined on input line 372
-.
-
-
-LaTeX Warning: Citation `jones2017large' on page 11 undefined on input line 372
-.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `ivezic2008lsst' on page 11 undefined on input line 376
-.
-
-
-LaTeX Warning: Reference `sec_lsst_features' on page 11 undefined on input line
- 378.
-
-[11]
-
-LaTeX Warning: Reference `equ_approx_pol' on page 12 undefined on input line 38
-0.
-
-
-LaTeX Warning: Reference `sec_cstr' on page 12 undefined on input line 385.
-
-
-LaTeX Warning: Citation `sebag2008lsst' on page 12 undefined on input line 387.
-
-
-
-LaTeX Warning: Citation `sebag2007lsst' on page 12 undefined on input line 387.
-
-
-
-LaTeX Warning: Citation `yoachim2016optical' on page 12 undefined on input line
- 387.
-
-
-LaTeX Warning: Reference `sec_lsst_bfs' on page 12 undefined on input line 387.
-
-
-
-LaTeX Warning: Reference `sec_opt' on page 12 undefined on input line 389.
-
-
-LaTeX Warning: Reference `sec_lsst_opt' on page 12 undefined on input line 389.
-
-
-[12 <./Figures/proposals.jpg>]
-
-LaTeX Warning: Citation `delgado2014lsst' on page 13 undefined on input line 39
-4.
-
-
-LaTeX Warning: Reference `tab_features' on page 13 undefined on input line 396.
-
-
+[11] [12 <./Figures/proposals.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `sec_cstr' on page 13 undefined on input line 416.
 
 [13]
 
-LaTeX Warning: Reference `tab_commonBF' on page 14 undefined on input line 433.
-
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
-
-LaTeX Warning: Reference `sec_lsst_problem' on page 15 undefined on input line 
-452.
-
-
-LaTeX Warning: Reference `sec_SM' on page 15 undefined on input line 456.
-
-[15]
-
-LaTeX Warning: Reference `fig_controlability' on page 16 undefined on input lin
-e 458.
-
-
-LaTeX Warning: Reference `equ_short_term_U' on page 16 undefined on input line 
-458.
-
-<Figures/Controlability.png, id=130, 2007.5pt x 1355.0625pt>
+[14] [15] <Figures/Controlability.png, id=283, 2007.5pt x 1355.0625pt>
 File: Figures/Controlability.png Graphic file (type png)
 
 <use Figures/Controlability.png>
@@ -994,19 +762,7 @@ Package pdftex.def Info: Figures/Controlability.png used on input line 466.
 (pdftex.def)             Requested size: 455.24408pt x 307.27438pt.
 
 
-LaTeX Warning: Reference `equ_short_term_U' on page 16 undefined on input line 
-468.
-
-
-LaTeX Warning: Reference `equ_short_term_U' on page 16 undefined on input line 
-468.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig_controlability' on page 16 undefined on input lin
-e 472.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 500--500
@@ -1030,10 +786,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `tab_feasibility' on page 16 undefined on input line 5
-14.
 
 
 Underfull \hbox (badness 6173) in paragraph at lines 539--539
@@ -1050,15 +802,7 @@ t tem-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `sec_opt' on page 16 undefined on input line 545.
-
-[16]
-
-LaTeX Warning: Reference `fig_theta_conv' on page 17 undefined on input line 55
-0.
-
-[17 <./Figures/Controlability.png>]
+[16] [17 <./Figures/Controlability.png>]
 
 LaTeX Warning: Text page 18 contains only floats.
 
@@ -1066,7 +810,7 @@ LaTeX Warning: Text page 18 contains only floats.
 Overfull \vbox (3.79286pt too high) has occurred while \output is active []
 
 
-[18] <Figures/TDcurve.png, id=153, 578.16pt x 433.62pt>
+[18] <Figures/TDcurve.png, id=310, 578.16pt x 433.62pt>
 File: Figures/TDcurve.png Graphic file (type png)
 
 <use Figures/TDcurve.png>
@@ -1076,21 +820,8 @@ Package pdftex.def Info: Figures/TDcurve.png used on input line 558.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
-
-LaTeX Warning: Reference `equ_approx_pol' on page 20 undefined on input line 58
-5.
-
-[20 <./Figures/TDcurve.png>]
-
-LaTeX Warning: Reference `equ_lsst_ede' on page 21 undefined on input line 593.
-
-
-
-LaTeX Warning: Reference `fig_eDEObjectiveFunction' on page 21 undefined on inp
-ut line 593.
-
-<Figures/eDEObjectiveFunction.png, id=173, 645.3711pt x 317.988pt>
+[19] [20 <./Figures/TDcurve.png>]
+<Figures/eDEObjectiveFunction.png, id=330, 645.3711pt x 317.988pt>
 File: Figures/eDEObjectiveFunction.png Graphic file (type png)
 
 <use Figures/eDEObjectiveFunction.png>
@@ -1098,44 +829,19 @@ Package pdftex.def Info: Figures/eDEObjectiveFunction.png used on input line 60
 3.
 (pdftex.def)             Requested size: 227.62204pt x 112.15143pt.
 
-
-LaTeX Warning: Reference `equ_lsst_ede' on page 21 undefined on input line 604.
-
-
-
-LaTeX Warning: Reference `equ_lsst_ede' on page 21 undefined on input line 604.
-
-
-
-LaTeX Warning: Reference `fig_eDEObjectiveFunction' on page 21 undefined on inp
-ut line 609.
-
-
 Overfull \hbox (1.87312pt too wide) in paragraph at lines 614--614
 []\OT1/cmr/bx/n/17.28 Performance of the Im-proved Feature-Based
  []
 
-
-LaTeX Warning: Citation `jones2014lsst' on page 21 undefined on input line 616.
-
-
 [21 <./Figures/eDEObjectiveFunction.png>]
-
-LaTeX Warning: Reference `fig_10yrs_skymap' on page 22 undefined on input line 
-621.
-
-
-LaTeX Warning: Reference `fig_10yrs_hist' on page 22 undefined on input line 62
-1.
-
-<Figures/FB10yrs_skymap.png, id=183, 1186.4325pt x 1240.635pt>
+<Figures/FB10yrs_skymap.png, id=346, 1186.4325pt x 1240.635pt>
 File: Figures/FB10yrs_skymap.png Graphic file (type png)
 
 <use Figures/FB10yrs_skymap.png>
 Package pdftex.def Info: Figures/FB10yrs_skymap.png used on input line 628.
 (pdftex.def)             Requested size: 204.85844pt x 214.218pt.
 
-<Figures/OpSim10yrs_skymap.png, id=184, 1186.4325pt x 1240.635pt>
+<Figures/OpSim10yrs_skymap.png, id=347, 1186.4325pt x 1240.635pt>
 File: Figures/OpSim10yrs_skymap.png Graphic file (type png)
 
 <use Figures/OpSim10yrs_skymap.png>
@@ -1149,7 +855,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 626--638
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/Co_addedHist10yrs.png, id=185, 1806.75pt x 903.375pt>
+<Figures/Co_addedHist10yrs.png, id=348, 1806.75pt x 903.375pt>
 File: Figures/Co_addedHist10yrs.png Graphic file (type png)
 
 <use Figures/Co_addedHist10yrs.png>
@@ -1159,19 +865,7 @@ Package pdftex.def Info: Figures/Co_addedHist10yrs.png used on input line 643.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig_10yrs_pair' on page 22 undefined on input line 64
-9.
-
-
-LaTeX Warning: Reference `fig_10yrs_pair_hist' on page 22 undefined on input li
-ne 649.
-
-
-LaTeX Warning: Reference `fig_10yrs_pair_hist' on page 22 undefined on input li
-ne 649.
-
-[22] <Figures/FB10yrs_Pair_skymap.pdf, id=191, 512.3686pt x 334.75987pt>
+[22] <Figures/FB10yrs_Pair_skymap.pdf, id=361, 512.3686pt x 334.75987pt>
 File: Figures/FB10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use Figures/FB10yrs_Pair_skymap.pdf>
@@ -1179,7 +873,7 @@ Package pdftex.def Info: Figures/FB10yrs_Pair_skymap.pdf used on input line 654
 .
 (pdftex.def)             Requested size: 204.85844pt x 133.84538pt.
 
-<Figures/OpSim10yrs_Pair_skymap.pdf, id=192, 515.66927pt x 327.75269pt>
+<Figures/OpSim10yrs_Pair_skymap.pdf, id=362, 515.66927pt x 327.75269pt>
 File: Figures/OpSim10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use Figures/OpSim10yrs_Pair_skymap.pdf>
@@ -1190,7 +884,7 @@ Package pdftex.def Info: Figures/OpSim10yrs_Pair_skymap.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PairHist.png, id=193, 578.16pt x 433.62pt>
+<Figures/PairHist.png, id=363, 578.16pt x 433.62pt>
 File: Figures/PairHist.png Graphic file (type png)
  <use Figures/PairHist.png>
 Package pdftex.def Info: Figures/PairHist.png used on input line 671.
@@ -1199,22 +893,14 @@ Package pdftex.def Info: Figures/PairHist.png used on input line 671.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig_10yrs_AltAz_FB' on page 23 undefined on input lin
-e 676.
-
-
-LaTeX Warning: Reference `fig_10yrs_AltAz_OpSim' on page 23 undefined on input 
-line 676.
-
-<Figures/FB10yrs_AltAz.png, id=194, 914.41624pt x 1228.59pt>
+<Figures/FB10yrs_AltAz.png, id=366, 914.41624pt x 1228.59pt>
 File: Figures/FB10yrs_AltAz.png Graphic file (type png)
 
 <use Figures/FB10yrs_AltAz.png>
 Package pdftex.def Info: Figures/FB10yrs_AltAz.png used on input line 682.
 (pdftex.def)             Requested size: 204.85844pt x 275.23978pt.
 
-<Figures/OpSim10yrs_AltAz.png, id=195, 907.39pt x 1228.59pt>
+<Figures/OpSim10yrs_AltAz.png, id=367, 907.39pt x 1228.59pt>
 File: Figures/OpSim10yrs_AltAz.png Graphic file (type png)
 
 <use Figures/OpSim10yrs_AltAz.png>
@@ -1227,9 +913,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [24 <./Figures/Co_addedHist10yrs.png> <./Figures/FB10yrs_Pair_skymap.pdf> <./Fi
 gures/OpSim10yrs_Pair_skymap.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/OpSim10yrs_Pair_sk
-ymap.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
+pdfTeX warning: pdflatex (file ./Figures/OpSim10yrs_Pair_skymap.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
 >] [25 <./Figures/PairHist.png>] [26 <./Figures/FB10yrs_AltAz.png> <./Figures/O
 pSim10yrs_AltAz.png>] [27] (./FBDE.bbl [28] [29])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
@@ -1238,55 +923,46 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
  (./FBDE.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 717.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 717.
+Package rerunfilecheck Info: File `FBDE.out' has not changed.
+(rerunfilecheck)             Checksum: A59C2418972A2C62F65A10A2B10E3ABF;1427.
 
 
-Package rerunfilecheck Warning: File `FBDE.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `FBDE.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  A59C2418972A2C62F65A10A2B10E3ABF;1427.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 717.
  ) 
 Here is how much of TeX's memory you used:
- 8246 strings out of 493089
- 121860 string characters out of 6134842
- 238240 words of memory out of 5000000
- 11462 multiletter control sequences out of 15000+600000
+ 8259 strings out of 493117
+ 122004 string characters out of 6135433
+ 242744 words of memory out of 5000000
+ 11453 multiletter control sequences out of 15000+600000
  22080 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,21n,40p,2215b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texm
+ 42i,21n,41p,2211b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on FBDE.pdf (30 pages, 3512171 bytes).
+Output written on FBDE.pdf (30 pages, 3515959 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
+ 588 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
  122 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
