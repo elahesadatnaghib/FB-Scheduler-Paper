@@ -1,0 +1,164 @@
+\begin{thebibliography}{10}
+
+\bibitem{tyson2002large}
+J~Anthony Tyson.
+\newblock Large synoptic survey telescope: overview.
+\newblock In {\em Survey and Other Telescope Technologies and Discoveries},
+  volume 4836, pages 10--21. International Society for Optics and Photonics,
+  2002.
+
+\bibitem{ivezic2008large}
+Z~Ivezic, T~Axelrod, WN~Brandt, DL~Burke, CF~Claver, A~Connolly, KH~Cook,
+  P~Gee, DK~Gilmore, SH~Jacoby, et~al.
+\newblock Large synoptic survey telescope: From science drivers to reference
+  design.
+\newblock {\em Serbian Astronomical Journal}, 176:1--13, 2008.
+
+\bibitem{nowakovski1999using}
+J{\"o}rg Nowakovski, Werner Schw{\"a}rzler, and Eberhard Triesch.
+\newblock Using the generalized assignment problem in scheduling the rosat
+  space telescope.
+\newblock {\em European Journal of Operational Research}, 112(3):531--541,
+  1999.
+
+\bibitem{johnston1994spike}
+Mark~D Johnston and Glenn Miller.
+\newblock Spike: Intelligent scheduling of hubble space telescope observations.
+\newblock {\em Intelligent Scheduling}, pages 391--422, 1994.
+
+\bibitem{muscettola1995automating}
+Nicola Muscettola, Barney Pell, Othar Hansson, and Sunil Mohan.
+\newblock Automating mission scheduling for space-based observatories.
+\newblock In {\em Robotic Telescopes. Current Capabilities, Present
+  Developments, and Future Prospects for Automated Astronomy}, volume~79, page
+  148, 1995.
+
+\bibitem{nelson1985design}
+Jerry~E Nelson, Terry~S Mast, and Sandra~M Faber.
+\newblock The design of the keck observatory and telescope.
+\newblock 1985.
+
+\bibitem{shetrone2007ten}
+Matthew Shetrone, Mark~E Cornell, James~R Fowler, Niall Gaffney, Benjamin Laws,
+  Jeff Mader, Cloud Mason, Stephen Odewahn, Brian Roman, Sergey Rostopchin,
+  et~al.
+\newblock Ten year review of queue scheduling of the hobby-eberly telescope.
+\newblock {\em Publications of the Astronomical Society of the Pacific},
+  119(855):556--566, 2007.
+
+\bibitem{steele1997control}
+Iain~A Steele and David Carter.
+\newblock Control software and scheduling of the liverpool robotic telescope.
+\newblock In {\em Telescope Control Systems II}, volume 3112, pages 222--233,
+  1997.
+
+\bibitem{brink2008salt}
+Janus Brink, Anne Charles, Christian Hettlage, Tim-Oliver Husser, Anthony
+  Koeslag, and Encarni Romero-Colmenero.
+\newblock The salt observation control system.
+\newblock In {\em Proc. of SPIE Vol}, volume 7019, pages 70190N--1, 2008.
+
+\bibitem{wootten2003atacama}
+Alwyn Wootten.
+\newblock Atacama large millimeter array (alma).
+\newblock In {\em Large Ground-based Telescopes}, volume 4837, pages 110--119.
+  International Society for Optics and Photonics, 2003.
+
+\bibitem{alexander2017enabling}
+Kate~D Alexander, Edo Berger, Geoff Bower, Sarah Casewell, S~Brad Cenko, Shami
+  Chatterjee, Ilse Cleeves, Jim Cordes, Jeremy Drake, Maria Drout, et~al.
+\newblock Enabling new alma science with improved support for time-domain
+  observations.
+\newblock {\em arXiv preprint arXiv:1703.04692}, 2017.
+
+\bibitem{delgado2016lsst}
+Francisco Delgado and Michael~A Reuter.
+\newblock The lsst scheduler from design to construction.
+\newblock In {\em SPIE Astronomical Telescopes+ Instrumentation}, pages
+  991019--991019. International Society for Optics and Photonics, 2016.
+
+\bibitem{naghib2016feature}
+Elahesadat Naghib, Robert~J Vanderbei, and Christopher Stubbs.
+\newblock Feature-based telescope scheduler.
+\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
+  VI}, volume 9910, page 991011. International Society for Optics and
+  Photonics, 2016.
+
+\bibitem{tsitsiklis1997analysis}
+John~N Tsitsiklis and Benjamin Van~Roy.
+\newblock Analysis of temporal-diffference learning with function
+  approximation.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1075--1081, 1997.
+
+\bibitem{tesauro1995temporal}
+Gerald Tesauro.
+\newblock Temporal difference learning and td-gammon.
+\newblock {\em Communications of the ACM}, 38(3):58--68, 1995.
+
+\bibitem{naghib2016entropic}
+Elahesadat Naghib and Amin Nobakhti.
+\newblock Entropic differential evolution-?de.
+\newblock In {\em American Control Conference (ACC), 2016}, pages 2440--2446.
+  IEEE, 2016.
+
+\bibitem{storn1997differential}
+Rainer Storn and Kenneth Price.
+\newblock Differential evolution--a simple and efficient heuristic for global
+  optimization over continuous spaces.
+\newblock {\em Journal of global optimization}, 11(4):341--359, 1997.
+
+\bibitem{jones2017large}
+R~Lynne Jones, Colin~T Slater, Joachim Moeyens, Lori Allen, Tim Axelrod, Kem
+  Cook, {\v{Z}}eljko Ivezi{\'c}, Mario Juri{\'c}, Jonathan Myers, and
+  Catherine~E Petry.
+\newblock The large synoptic survey telescope as a near-earth object discovery
+  machine.
+\newblock {\em Icarus}, 2017.
+
+\bibitem{ivezic2008lsst}
+Zeljko Ivezic, JA~Tyson, B~Abel, E~Acosta, R~Allsman, Y~AlSayyad, SF~Anderson,
+  J~Andrew, R~Angel, G~Angeli, et~al.
+\newblock Lsst: from science drivers to reference design and anticipated data
+  products.
+\newblock {\em arXiv preprint arXiv:0805.2366}, 2008.
+
+\bibitem{sebag2008lsst}
+Jacques Sebag, Victor~L Krabbendam, Charles~F Claver, John Andrew, Jeffrey~D
+  Barr, and Dimitri Klebe.
+\newblock Lsst ir camera for cloud monitoring and observation planning.
+\newblock In {\em Ground-based and Airborne Telescopes II}, volume 7012, page
+  70123W. International Society for Optics and Photonics, 2008.
+
+\bibitem{sebag2007lsst}
+J~Sebag, J~Barr, A~Saha, C~Claver, and V~Krabbendam.
+\newblock Lsst cloud cover measurement for observation scheduling.
+\newblock {\em Revista Mexicana de Astronom{\'\i}a y Astrof{\'\i}sica}, 31,
+  2007.
+
+\bibitem{yoachim2016optical}
+Peter Yoachim, Michael Coughlin, George~Z Angeli, Charles~F Claver, Andrew~J
+  Connolly, Kem Cook, Scott Daniel, {\v{Z}}eljko Ivezi{\'c}, R~Lynne Jones,
+  Catherine Petry, et~al.
+\newblock An optical to ir sky brightness model for the lsst.
+\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
+  VI}, volume 9910, page 99101A. International Society for Optics and
+  Photonics, 2016.
+
+\bibitem{delgado2014lsst}
+Francisco Delgado, Abhijit Saha, Srinivasan Chandrasekharan, Kem Cook,
+  Catherine Petry, and Stephen Ridgway.
+\newblock The lsst operations simulator.
+\newblock In {\em Modeling, Systems Engineering, and Project Management for
+  Astronomy VI}, volume 9150, page 915015. International Society for Optics and
+  Photonics, 2014.
+
+\bibitem{jones2014lsst}
+R~Lynne Jones, Peter Yoachim, Srinivasan Chandrasekharan, Andrew~J Connolly,
+  Kem~H Cook, {\v{Z}}eljko Ivezic, K~Simon Krughoff, Catherine Petry, and
+  Stephen~T Ridgway.
+\newblock The lsst metrics analysis framework (maf).
+\newblock In {\em SPIE Astronomical Telescopes+ Instrumentation}, pages
+  91490B--91490B. International Society for Optics and Photonics, 2014.
+
+\end{thebibliography}
