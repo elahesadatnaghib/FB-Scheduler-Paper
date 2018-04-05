@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Scheduling framework}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Markovian representation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Markovian approximation}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Scheduler optimization}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Reinforcement Learnig}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Global Optimization}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Problem of Scheduling for LSST}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Features of the LSST scheduler}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Basis functions of the LSST scheduler}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Common basis functions}{subsection.4.2}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Region-specific modifications of the common basis functions}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Controllability of the scheduler}{subsection.4.2}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Survey-specific constraints}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{LSST scheduler optimization}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{LSST scheduler reinforcement training}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{LSST scheduler global optimization}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Performance of the Improved Feature-Based scheduler for LSST}{}% 18
+\BOOKMARK [1][-]{section.7}{Concluding remarks}{}% 19
