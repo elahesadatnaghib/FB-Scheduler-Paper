@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 APR 2018 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 APR 2018 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,10 +576,6 @@ Package caption Info: hyperref package is loaded.
 \c@prop=\count124
 \c@defn=\count125
 
-
-LaTeX Warning: Unused global option(s):
-    [aas_macros].
-
 (./FBDE.aux
 
 LaTeX Warning: Label `fig:sfig1' multiply defined.
@@ -690,67 +686,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `tyson2002large' on page 2 undefined on input line 95.
-
-
-LaTeX Warning: Citation `ivezic2008large' on page 2 undefined on input line 97.
-
-
-
-LaTeX Warning: Citation `nowakovski1999using' on page 2 undefined on input line
- 99.
-
-
-LaTeX Warning: Citation `johnston1994spike' on page 2 undefined on input line 9
-9.
-
-
-LaTeX Warning: Citation `muscettola1995automating' on page 2 undefined on input
- line 99.
-
-
-LaTeX Warning: Citation `nelson1985design' on page 2 undefined on input line 10
-3.
-
-
-LaTeX Warning: Citation `shetrone2007ten' on page 2 undefined on input line 103
-.
-
-[2]
-
-LaTeX Warning: Citation `steele1997control' on page 3 undefined on input line 1
-05.
-
-
-LaTeX Warning: Citation `brink2008salt' on page 3 undefined on input line 107.
-
-
-LaTeX Warning: Citation `wootten2003atacama' on page 3 undefined on input line 
-107.
-
-
-LaTeX Warning: Citation `alexander2017enabling' on page 3 undefined on input li
-ne 107.
-
-
-LaTeX Warning: Citation `delgado2016lsst' on page 3 undefined on input line 107
-.
-
-
-LaTeX Warning: Citation `naghib2016feature' on page 3 undefined on input line 1
-07.
-
-
-LaTeX Warning: Citation `Boroson14' on page 3 undefined on input line 111.
-
-
-LaTeX Warning: Citation `Saunders14' on page 3 undefined on input line 111.
-
-
-LaTeX Warning: Citation `Lampoudi15' on page 3 undefined on input line 111.
-
-[3]
+[2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
@@ -801,65 +737,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--264
  []
 
 [8] [9] [10]
-
-LaTeX Warning: Citation `tsitsiklis1997analysis' on page 11 undefined on input 
-line 359.
-
-
-LaTeX Warning: Citation `tesauro1995temporal' on page 11 undefined on input lin
-e 359.
-
-
-LaTeX Warning: Citation `naghib2016entropic' on page 11 undefined on input line
- 373.
-
-
-LaTeX Warning: Citation `storn1997differential' on page 11 undefined on input l
-ine 373.
-
-<Figures/minion_1016_proposal_footprint.pdf, id=189, 578.16pt x 433.62pt>
+<Figures/minion_1016_proposal_footprint.pdf, id=225, 578.16pt x 433.62pt>
 File: Figures/minion_1016_proposal_footprint.pdf Graphic file (type pdf)
 
 <use Figures/minion_1016_proposal_footprint.pdf>
 Package pdftex.def Info: Figures/minion_1016_proposal_footprint.pdf used on inp
 ut line 382.
 (pdftex.def)             Requested size: 273.14922pt x 204.86006pt.
-
-
-LaTeX Warning: Citation `jones2017large' on page 11 undefined on input line 383
-.
-
-
-LaTeX Warning: Citation `jones2017large' on page 11 undefined on input line 383
-.
-
-[11]
-
-LaTeX Warning: Citation `ivezic2008lsst' on page 12 undefined on input line 387
-.
-
-[12 <./Figures/minion_1016_proposal_footprint.pdf>]
-
-LaTeX Warning: Citation `sebag2008lsst' on page 13 undefined on input line 398.
-
-
-
-LaTeX Warning: Citation `sebag2007lsst' on page 13 undefined on input line 398.
-
-
-
-LaTeX Warning: Citation `yoachim2016optical' on page 13 undefined on input line
- 398.
-
-
-LaTeX Warning: Citation `delgado2014lsst' on page 13 undefined on input line 40
-5.
-
-[13] [14]
+ [11] [12 <./Figures/minion_1016_proposal_footprint.pdf>] [13] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] <Figures/Controlability.png, id=13742, 2007.5pt x 1355.0625pt>
+[15] <Figures/Controlability.png, id=13795, 2007.5pt x 1355.0625pt>
 File: Figures/Controlability.png Graphic file (type png)
 
 <use Figures/Controlability.png>
@@ -912,14 +801,14 @@ Underfull \hbox (badness 1960) in paragraph at lines 550--550
 t tem-
  []
 
-[19] <Figures/TDcurve.png, id=13774, 578.16pt x 433.62pt>
+[19] <Figures/TDcurve.png, id=13828, 578.16pt x 433.62pt>
 File: Figures/TDcurve.png Graphic file (type png)
 
 <use Figures/TDcurve.png>
 Package pdftex.def Info: Figures/TDcurve.png used on input line 569.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
  [20 <./Figures/TDcurve.png>]
-<Figures/eDEObjectiveFunction.png, id=13789, 645.3711pt x 317.988pt>
+<Figures/eDEObjectiveFunction.png, id=13842, 645.3711pt x 317.988pt>
 File: Figures/eDEObjectiveFunction.png Graphic file (type png)
 
 <use Figures/eDEObjectiveFunction.png>
@@ -935,20 +824,15 @@ Overfull \hbox (1.87312pt too wide) in paragraph at lines 625--625
 []\OT1/cmr/bx/n/17.28 Performance of the Im-proved Feature-Based
  []
 
-[21]
-
-LaTeX Warning: Citation `jones2014lsst' on page 22 undefined on input line 630.
-
-
-[22 <./Figures/eDEObjectiveFunction.png>]
-<Figures/FB10yrs_skymap.png, id=13810, 1186.4325pt x 1240.635pt>
+[21] [22 <./Figures/eDEObjectiveFunction.png>]
+<Figures/FB10yrs_skymap.png, id=13865, 1186.4325pt x 1240.635pt>
 File: Figures/FB10yrs_skymap.png Graphic file (type png)
 
 <use Figures/FB10yrs_skymap.png>
 Package pdftex.def Info: Figures/FB10yrs_skymap.png used on input line 642.
 (pdftex.def)             Requested size: 204.85844pt x 214.218pt.
 
-<Figures/OpSim10yrs_skymap.png, id=13811, 1186.4325pt x 1240.635pt>
+<Figures/OpSim10yrs_skymap.png, id=13866, 1186.4325pt x 1240.635pt>
 File: Figures/OpSim10yrs_skymap.png Graphic file (type png)
 
 <use Figures/OpSim10yrs_skymap.png>
@@ -959,7 +843,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 640--652
 []$[]$ $[]$ 
  []
 
-<Figures/Co_addedHist10yrs.png, id=13812, 1806.75pt x 903.375pt>
+<Figures/Co_addedHist10yrs.png, id=13867, 1806.75pt x 903.375pt>
 File: Figures/Co_addedHist10yrs.png Graphic file (type png)
 
 <use Figures/Co_addedHist10yrs.png>
@@ -971,7 +855,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23 <./Figures/FB10yrs_skymap.png> <./Figures/OpSim10yrs_skymap.png>] [24 <./Fi
 gures/Co_addedHist10yrs.png>]
-<Figures/FB10yrs_Pair_skymap.pdf, id=13831, 512.3686pt x 334.75987pt>
+<Figures/FB10yrs_Pair_skymap.pdf, id=13886, 512.3686pt x 334.75987pt>
 File: Figures/FB10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use Figures/FB10yrs_Pair_skymap.pdf>
@@ -979,7 +863,7 @@ Package pdftex.def Info: Figures/FB10yrs_Pair_skymap.pdf used on input line 668
 .
 (pdftex.def)             Requested size: 204.85844pt x 133.84538pt.
 
-<Figures/OpSim10yrs_Pair_skymap.pdf, id=13832, 515.66927pt x 327.75269pt>
+<Figures/OpSim10yrs_Pair_skymap.pdf, id=13887, 515.66927pt x 327.75269pt>
 File: Figures/OpSim10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use Figures/OpSim10yrs_Pair_skymap.pdf>
@@ -987,7 +871,7 @@ Package pdftex.def Info: Figures/OpSim10yrs_Pair_skymap.pdf used on input line
 674.
 (pdftex.def)             Requested size: 204.85844pt x 130.20355pt.
 
-<Figures/PairHist.png, id=13833, 578.16pt x 433.62pt>
+<Figures/PairHist.png, id=13888, 578.16pt x 433.62pt>
 File: Figures/PairHist.png Graphic file (type png)
 
 <use Figures/PairHist.png>
@@ -998,14 +882,14 @@ Package pdftex.def Info: Figures/PairHist.png used on input line 685.
 pdfTeX warning: pdflatex (file ./Figures/OpSim10yrs_Pair_skymap.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 > <./Figures/PairHist.png>]
-<Figures/FB10yrs_AltAz.png, id=13929, 914.41624pt x 1228.59pt>
+<Figures/FB10yrs_AltAz.png, id=13984, 914.41624pt x 1228.59pt>
 File: Figures/FB10yrs_AltAz.png Graphic file (type png)
 
 <use Figures/FB10yrs_AltAz.png>
 Package pdftex.def Info: Figures/FB10yrs_AltAz.png used on input line 698.
 (pdftex.def)             Requested size: 204.85844pt x 275.23978pt.
 
-<Figures/OpSim10yrs_AltAz.png, id=13930, 907.39pt x 1228.59pt>
+<Figures/OpSim10yrs_AltAz.png, id=13985, 907.39pt x 1228.59pt>
 File: Figures/OpSim10yrs_AltAz.png Graphic file (type png)
 
 <use Figures/OpSim10yrs_AltAz.png>
@@ -1027,21 +911,18 @@ Package rerunfilecheck Info: File `FBDE.out' has not changed.
 (rerunfilecheck)             Checksum: A59C2418972A2C62F65A10A2B10E3ABF;1427.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 735.
  ) 
 Here is how much of TeX's memory you used:
- 8279 strings out of 493117
- 122335 string characters out of 6135433
- 232454 words of memory out of 5000000
- 11469 multiletter control sequences out of 15000+600000
+ 8275 strings out of 493117
+ 122267 string characters out of 6135433
+ 233464 words of memory out of 5000000
+ 11466 multiletter control sequences out of 15000+600000
  22248 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,21n,40p,2211b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,21n,41p,2211b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -1063,10 +944,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on FBDE.pdf (31 pages, 5485601 bytes).
+Output written on FBDE.pdf (31 pages, 5486296 bytes).
 PDF statistics:
- 14083 PDF objects out of 15390 (max. 8388607)
- 7126 compressed objects within 72 object streams
+ 14111 PDF objects out of 15390 (max. 8388607)
+ 7153 compressed objects within 72 object streams
  125 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
