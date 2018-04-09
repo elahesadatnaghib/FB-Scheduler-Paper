@@ -84,6 +84,26 @@ Elahesadat Naghib, Robert~J Vanderbei, and Christopher Stubbs.
   VI}, volume 9910, page 991011. International Society for Optics and
   Photonics, 2016.
 
+\bibitem{Boroson14}
+T.~{Boroson}, T.~{Brown}, A.~{Hjelstrom}, D.~A. {Howell}, T.~{Lister},
+  A.~{Pickles}, W.~{Rosing}, E.~{Saunders}, R.~{Street}, and Z.~{Walker}.
+\newblock {Science operations for LCOGT: a global telescope network}.
+\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
+  V}, volume 9149 of {\em \procspie}, page 91491E, August 2014.
+
+\bibitem{Saunders14}
+E.~{Saunders} and S.~{Lampoudi}.
+\newblock {Multi-Telescope Observing: the LCOGT Network Scheduler}.
+\newblock In P.~R. {Wozniak}, M.~J. {Graham}, A.~A. {Mahabal}, and R.~{Seaman},
+  editors, {\em The Third Hot-wiring the Transient Universe Workshop}, pages
+  117--123, 2014.
+
+\bibitem{Lampoudi15}
+S.~{Lampoudi}, E.~{Saunders}, and J.~{Eastman}.
+\newblock {An Integer Linear Programming Solution to the Telescope Network
+  Scheduling Problem}.
+\newblock {\em ArXiv e-prints}, March 2015.
+
 \bibitem{tsitsiklis1997analysis}
 John~N Tsitsiklis and Benjamin Van~Roy.
 \newblock Analysis of temporal-diffference learning with function
@@ -109,12 +129,12 @@ Rainer Storn and Kenneth Price.
 \newblock {\em Journal of global optimization}, 11(4):341--359, 1997.
 
 \bibitem{jones2017large}
-R~Lynne Jones, Colin~T Slater, Joachim Moeyens, Lori Allen, Tim Axelrod, Kem
-  Cook, {\v{Z}}eljko Ivezi{\'c}, Mario Juri{\'c}, Jonathan Myers, and
-  Catherine~E Petry.
-\newblock The large synoptic survey telescope as a near-earth object discovery
-  machine.
-\newblock {\em Icarus}, 2017.
+R.~L. {Jones}, C.~T. {Slater}, J.~{Moeyens}, L.~{Allen}, T.~{Axelrod},
+  K.~{Cook}, {\v Z}.~{Ivezi{\'c}}, M.~{Juri{\'c}}, J.~{Myers}, and C.~E.
+  {Petry}.
+\newblock {The Large Synoptic Survey Telescope as a Near-Earth Object discovery
+  machine}.
+\newblock {\em \icarus}, 303:181--202, March 2018.
 
 \bibitem{ivezic2008lsst}
 Zeljko Ivezic, JA~Tyson, B~Abel, E~Acosta, R~Allsman, Y~AlSayyad, SF~Anderson,
