@@ -1,184 +1,138 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
-\bibitem{tyson2002large}
-J~Anthony Tyson.
-\newblock Large synoptic survey telescope: overview.
-\newblock In {\em Survey and Other Telescope Technologies and Discoveries},
-  volume 4836, pages 10--21. International Society for Optics and Photonics,
-  2002.
+\bibitem[{Alexander {et~al.}(2017)Alexander, Berger, Bower, Casewell, Cenko,
+  Chatterjee, Cleeves, Cordes, Drake, Drout, {et~al.}}]{alexander2017enabling}
+Alexander, K.~D., Berger, E., Bower, G., {et~al.} 2017, arXiv preprint
+  arXiv:1703.04692
 
-\bibitem{ivezic2008large}
-Z~Ivezic, T~Axelrod, WN~Brandt, DL~Burke, CF~Claver, A~Connolly, KH~Cook,
-  P~Gee, DK~Gilmore, SH~Jacoby, et~al.
-\newblock Large synoptic survey telescope: From science drivers to reference
-  design.
-\newblock {\em Serbian Astronomical Journal}, 176:1--13, 2008.
+\bibitem[{{Boroson} {et~al.}(2014){Boroson}, {Brown}, {Hjelstrom}, {Howell},
+  {Lister}, {Pickles}, {Rosing}, {Saunders}, {Street}, \& {Walker}}]{Boroson14}
+{Boroson}, T., {Brown}, T., {Hjelstrom}, A., {et~al.} 2014, in \procspie, Vol.
+  9149, Observatory Operations: Strategies, Processes, and Systems V, 91491E
 
-\bibitem{nowakovski1999using}
-J{\"o}rg Nowakovski, Werner Schw{\"a}rzler, and Eberhard Triesch.
-\newblock Using the generalized assignment problem in scheduling the rosat
-  space telescope.
-\newblock {\em European Journal of Operational Research}, 112(3):531--541,
-  1999.
+\bibitem[{Brink {et~al.}(2008)Brink, Charles, Hettlage, Husser, Koeslag, \&
+  Romero-Colmenero}]{brink2008salt}
+Brink, J., Charles, A., Hettlage, C., {et~al.} 2008, in Proc. of SPIE Vol, Vol.
+  7019, 70190N--1
 
-\bibitem{johnston1994spike}
-Mark~D Johnston and Glenn Miller.
-\newblock Spike: Intelligent scheduling of hubble space telescope observations.
-\newblock {\em Intelligent Scheduling}, pages 391--422, 1994.
+\bibitem[{Delgado \& Reuter(2016)}]{delgado2016lsst}
+Delgado, F., \& Reuter, M.~A. 2016, in SPIE Astronomical Telescopes+
+  Instrumentation, International Society for Optics and Photonics,
+  991019--991019
 
-\bibitem{muscettola1995automating}
-Nicola Muscettola, Barney Pell, Othar Hansson, and Sunil Mohan.
-\newblock Automating mission scheduling for space-based observatories.
-\newblock In {\em Robotic Telescopes. Current Capabilities, Present
-  Developments, and Future Prospects for Automated Astronomy}, volume~79, page
-  148, 1995.
+\bibitem[{Delgado {et~al.}(2014)Delgado, Saha, Chandrasekharan, Cook, Petry, \&
+  Ridgway}]{delgado2014lsst}
+Delgado, F., Saha, A., Chandrasekharan, S., {et~al.} 2014, in Modeling, Systems
+  Engineering, and Project Management for Astronomy VI, Vol. 9150,
+  International Society for Optics and Photonics, 915015
 
-\bibitem{nelson1985design}
-Jerry~E Nelson, Terry~S Mast, and Sandra~M Faber.
-\newblock The design of the keck observatory and telescope.
-\newblock 1985.
+\bibitem[{Ivezic {et~al.}(2008{\natexlab{a}})Ivezic, Axelrod, Brandt, Burke,
+  Claver, Connolly, Cook, Gee, Gilmore, Jacoby, {et~al.}}]{ivezic2008large}
+Ivezic, Z., Axelrod, T., Brandt, W., {et~al.} 2008{\natexlab{a}}, Serbian
+  Astronomical Journal, 176, 1
 
-\bibitem{shetrone2007ten}
-Matthew Shetrone, Mark~E Cornell, James~R Fowler, Niall Gaffney, Benjamin Laws,
-  Jeff Mader, Cloud Mason, Stephen Odewahn, Brian Roman, Sergey Rostopchin,
-  et~al.
-\newblock Ten year review of queue scheduling of the hobby-eberly telescope.
-\newblock {\em Publications of the Astronomical Society of the Pacific},
-  119(855):556--566, 2007.
+\bibitem[{Ivezic {et~al.}(2008{\natexlab{b}})Ivezic, Tyson, Abel, Acosta,
+  Allsman, AlSayyad, Anderson, Andrew, Angel, Angeli,
+  {et~al.}}]{ivezic2008lsst}
+Ivezic, Z., Tyson, J., Abel, B., {et~al.} 2008{\natexlab{b}}, arXiv preprint
+  arXiv:0805.2366
 
-\bibitem{steele1997control}
-Iain~A Steele and David Carter.
-\newblock Control software and scheduling of the liverpool robotic telescope.
-\newblock In {\em Telescope Control Systems II}, volume 3112, pages 222--233,
-  1997.
+\bibitem[{Johnston \& Miller(1994)}]{johnston1994spike}
+Johnston, M.~D., \& Miller, G. 1994, Intelligent Scheduling, 391
 
-\bibitem{brink2008salt}
-Janus Brink, Anne Charles, Christian Hettlage, Tim-Oliver Husser, Anthony
-  Koeslag, and Encarni Romero-Colmenero.
-\newblock The salt observation control system.
-\newblock In {\em Proc. of SPIE Vol}, volume 7019, pages 70190N--1, 2008.
+\bibitem[{Jones {et~al.}(2014)Jones, Yoachim, Chandrasekharan, Connolly, Cook,
+  Ivezic, Krughoff, Petry, \& Ridgway}]{jones2014lsst}
+Jones, R.~L., Yoachim, P., Chandrasekharan, S., {et~al.} 2014, in SPIE
+  Astronomical Telescopes+ Instrumentation, International Society for Optics
+  and Photonics, 91490B--91490B
 
-\bibitem{wootten2003atacama}
-Alwyn Wootten.
-\newblock Atacama large millimeter array (alma).
-\newblock In {\em Large Ground-based Telescopes}, volume 4837, pages 110--119.
-  International Society for Optics and Photonics, 2003.
+\bibitem[{{Jones} {et~al.}(2018){Jones}, {Slater}, {Moeyens}, {Allen},
+  {Axelrod}, {Cook}, {Ivezi{\'c}}, {Juri{\'c}}, {Myers}, \&
+  {Petry}}]{jones2017large}
+{Jones}, R.~L., {Slater}, C.~T., {Moeyens}, J., {et~al.} 2018, \icarus, 303,
+  181, \dodoi{10.1016/j.icarus.2017.11.033}
 
-\bibitem{alexander2017enabling}
-Kate~D Alexander, Edo Berger, Geoff Bower, Sarah Casewell, S~Brad Cenko, Shami
-  Chatterjee, Ilse Cleeves, Jim Cordes, Jeremy Drake, Maria Drout, et~al.
-\newblock Enabling new alma science with improved support for time-domain
-  observations.
-\newblock {\em arXiv preprint arXiv:1703.04692}, 2017.
+\bibitem[{{Lampoudi} {et~al.}(2015){Lampoudi}, {Saunders}, \&
+  {Eastman}}]{Lampoudi15}
+{Lampoudi}, S., {Saunders}, E., \& {Eastman}, J. 2015, ArXiv e-prints.
+\newblock \doarXiv{1503.07170}
 
-\bibitem{delgado2016lsst}
-Francisco Delgado and Michael~A Reuter.
-\newblock The lsst scheduler from design to construction.
-\newblock In {\em SPIE Astronomical Telescopes+ Instrumentation}, pages
-  991019--991019. International Society for Optics and Photonics, 2016.
+\bibitem[{Muscettola {et~al.}(1995)Muscettola, Pell, Hansson, \&
+  Mohan}]{muscettola1995automating}
+Muscettola, N., Pell, B., Hansson, O., \& Mohan, S. 1995, in Robotic
+  Telescopes. Current Capabilities, Present Developments, and Future Prospects
+  for Automated Astronomy, Vol.~79, 148
 
-\bibitem{naghib2016feature}
-Elahesadat Naghib, Robert~J Vanderbei, and Christopher Stubbs.
-\newblock Feature-based telescope scheduler.
-\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
-  VI}, volume 9910, page 991011. International Society for Optics and
-  Photonics, 2016.
+\bibitem[{Naghib \& Nobakhti(2016)}]{naghib2016entropic}
+Naghib, E., \& Nobakhti, A. 2016, in American Control Conference (ACC), 2016,
+  IEEE, 2440--2446
 
-\bibitem{Boroson14}
-T.~{Boroson}, T.~{Brown}, A.~{Hjelstrom}, D.~A. {Howell}, T.~{Lister},
-  A.~{Pickles}, W.~{Rosing}, E.~{Saunders}, R.~{Street}, and Z.~{Walker}.
-\newblock {Science operations for LCOGT: a global telescope network}.
-\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
-  V}, volume 9149 of {\em \procspie}, page 91491E, August 2014.
+\bibitem[{Naghib {et~al.}(2016)Naghib, Vanderbei, \&
+  Stubbs}]{naghib2016feature}
+Naghib, E., Vanderbei, R.~J., \& Stubbs, C. 2016, in Observatory Operations:
+  Strategies, Processes, and Systems VI, Vol. 9910, International Society for
+  Optics and Photonics, 991011
 
-\bibitem{Saunders14}
-E.~{Saunders} and S.~{Lampoudi}.
-\newblock {Multi-Telescope Observing: the LCOGT Network Scheduler}.
-\newblock In P.~R. {Wozniak}, M.~J. {Graham}, A.~A. {Mahabal}, and R.~{Seaman},
-  editors, {\em The Third Hot-wiring the Transient Universe Workshop}, pages
-  117--123, 2014.
+\bibitem[{Nelson {et~al.}(1985)Nelson, Mast, \& Faber}]{nelson1985design}
+Nelson, J.~E., Mast, T.~S., \& Faber, S.~M. 1985
 
-\bibitem{Lampoudi15}
-S.~{Lampoudi}, E.~{Saunders}, and J.~{Eastman}.
-\newblock {An Integer Linear Programming Solution to the Telescope Network
-  Scheduling Problem}.
-\newblock {\em ArXiv e-prints}, March 2015.
+\bibitem[{Nowakovski {et~al.}(1999)Nowakovski, Schw{\"a}rzler, \&
+  Triesch}]{nowakovski1999using}
+Nowakovski, J., Schw{\"a}rzler, W., \& Triesch, E. 1999, European Journal of
+  Operational Research, 112, 531
 
-\bibitem{tsitsiklis1997analysis}
-John~N Tsitsiklis and Benjamin Van~Roy.
-\newblock Analysis of temporal-diffference learning with function
-  approximation.
-\newblock In {\em Advances in neural information processing systems}, pages
-  1075--1081, 1997.
+\bibitem[{{Saunders} \& {Lampoudi}(2014)}]{Saunders14}
+{Saunders}, E., \& {Lampoudi}, S. 2014, in The Third Hot-wiring the Transient
+  Universe Workshop, ed. P.~R. {Wozniak}, M.~J. {Graham}, A.~A. {Mahabal}, \&
+  R.~{Seaman}, 117--123
 
-\bibitem{tesauro1995temporal}
-Gerald Tesauro.
-\newblock Temporal difference learning and td-gammon.
-\newblock {\em Communications of the ACM}, 38(3):58--68, 1995.
+\bibitem[{Sebag {et~al.}(2007)Sebag, Barr, Saha, Claver, \&
+  Krabbendam}]{sebag2007lsst}
+Sebag, J., Barr, J., Saha, A., Claver, C., \& Krabbendam, V. 2007, Revista
+  Mexicana de Astronom{\'\i}a y Astrof{\'\i}sica, 31
 
-\bibitem{naghib2016entropic}
-Elahesadat Naghib and Amin Nobakhti.
-\newblock Entropic differential evolution-?de.
-\newblock In {\em American Control Conference (ACC), 2016}, pages 2440--2446.
-  IEEE, 2016.
+\bibitem[{Sebag {et~al.}(2008)Sebag, Krabbendam, Claver, Andrew, Barr, \&
+  Klebe}]{sebag2008lsst}
+Sebag, J., Krabbendam, V.~L., Claver, C.~F., {et~al.} 2008, in Ground-based and
+  Airborne Telescopes II, Vol. 7012, International Society for Optics and
+  Photonics, 70123W
 
-\bibitem{storn1997differential}
-Rainer Storn and Kenneth Price.
-\newblock Differential evolution--a simple and efficient heuristic for global
-  optimization over continuous spaces.
-\newblock {\em Journal of global optimization}, 11(4):341--359, 1997.
+\bibitem[{Shetrone {et~al.}(2007)Shetrone, Cornell, Fowler, Gaffney, Laws,
+  Mader, Mason, Odewahn, Roman, Rostopchin, {et~al.}}]{shetrone2007ten}
+Shetrone, M., Cornell, M.~E., Fowler, J.~R., {et~al.} 2007, Publications of the
+  Astronomical Society of the Pacific, 119, 556
 
-\bibitem{jones2017large}
-R.~L. {Jones}, C.~T. {Slater}, J.~{Moeyens}, L.~{Allen}, T.~{Axelrod},
-  K.~{Cook}, {\v Z}.~{Ivezi{\'c}}, M.~{Juri{\'c}}, J.~{Myers}, and C.~E.
-  {Petry}.
-\newblock {The Large Synoptic Survey Telescope as a Near-Earth Object discovery
-  machine}.
-\newblock {\em \icarus}, 303:181--202, March 2018.
+\bibitem[{Steele \& Carter(1997)}]{steele1997control}
+Steele, I.~A., \& Carter, D. 1997, in Telescope Control Systems II, Vol. 3112,
+  222--233
 
-\bibitem{ivezic2008lsst}
-Zeljko Ivezic, JA~Tyson, B~Abel, E~Acosta, R~Allsman, Y~AlSayyad, SF~Anderson,
-  J~Andrew, R~Angel, G~Angeli, et~al.
-\newblock Lsst: from science drivers to reference design and anticipated data
-  products.
-\newblock {\em arXiv preprint arXiv:0805.2366}, 2008.
+\bibitem[{Storn \& Price(1997)}]{storn1997differential}
+Storn, R., \& Price, K. 1997, Journal of global optimization, 11, 341
 
-\bibitem{sebag2008lsst}
-Jacques Sebag, Victor~L Krabbendam, Charles~F Claver, John Andrew, Jeffrey~D
-  Barr, and Dimitri Klebe.
-\newblock Lsst ir camera for cloud monitoring and observation planning.
-\newblock In {\em Ground-based and Airborne Telescopes II}, volume 7012, page
-  70123W. International Society for Optics and Photonics, 2008.
+\bibitem[{Tesauro(1995)}]{tesauro1995temporal}
+Tesauro, G. 1995, Communications of the ACM, 38, 58
 
-\bibitem{sebag2007lsst}
-J~Sebag, J~Barr, A~Saha, C~Claver, and V~Krabbendam.
-\newblock Lsst cloud cover measurement for observation scheduling.
-\newblock {\em Revista Mexicana de Astronom{\'\i}a y Astrof{\'\i}sica}, 31,
-  2007.
+\bibitem[{Tsitsiklis \& Van~Roy(1997)}]{tsitsiklis1997analysis}
+Tsitsiklis, J.~N., \& Van~Roy, B. 1997, in Advances in neural information
+  processing systems, 1075--1081
 
-\bibitem{yoachim2016optical}
-Peter Yoachim, Michael Coughlin, George~Z Angeli, Charles~F Claver, Andrew~J
-  Connolly, Kem Cook, Scott Daniel, {\v{Z}}eljko Ivezi{\'c}, R~Lynne Jones,
-  Catherine Petry, et~al.
-\newblock An optical to ir sky brightness model for the lsst.
-\newblock In {\em Observatory Operations: Strategies, Processes, and Systems
-  VI}, volume 9910, page 99101A. International Society for Optics and
-  Photonics, 2016.
+\bibitem[{Tyson(2002)}]{tyson2002large}
+Tyson, J.~A. 2002, in Survey and Other Telescope Technologies and Discoveries,
+  Vol. 4836, International Society for Optics and Photonics, 10--21
 
-\bibitem{delgado2014lsst}
-Francisco Delgado, Abhijit Saha, Srinivasan Chandrasekharan, Kem Cook,
-  Catherine Petry, and Stephen Ridgway.
-\newblock The lsst operations simulator.
-\newblock In {\em Modeling, Systems Engineering, and Project Management for
-  Astronomy VI}, volume 9150, page 915015. International Society for Optics and
-  Photonics, 2014.
+\bibitem[{Wootten(2003)}]{wootten2003atacama}
+Wootten, A. 2003, in Large Ground-based Telescopes, Vol. 4837, International
+  Society for Optics and Photonics, 110--119
 
-\bibitem{jones2014lsst}
-R~Lynne Jones, Peter Yoachim, Srinivasan Chandrasekharan, Andrew~J Connolly,
-  Kem~H Cook, {\v{Z}}eljko Ivezic, K~Simon Krughoff, Catherine Petry, and
-  Stephen~T Ridgway.
-\newblock The lsst metrics analysis framework (maf).
-\newblock In {\em SPIE Astronomical Telescopes+ Instrumentation}, pages
-  91490B--91490B. International Society for Optics and Photonics, 2014.
+\bibitem[{Yoachim {et~al.}(2016)Yoachim, Coughlin, Angeli, Claver, Connolly,
+  Cook, Daniel, Ivezi{\'c}, Jones, Petry, {et~al.}}]{yoachim2016optical}
+Yoachim, P., Coughlin, M., Angeli, G.~Z., {et~al.} 2016, in Observatory
+  Operations: Strategies, Processes, and Systems VI, Vol. 9910, International
+  Society for Optics and Photonics, 99101A
 
 \end{thebibliography}
