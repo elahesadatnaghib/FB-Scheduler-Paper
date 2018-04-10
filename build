@@ -1,0 +1,6 @@
+#!/bin/sh
+rm FBDE.bbl FBDE.aux
+pdflatex FBDE
+bibtex FBDE
+pdflatex FBDE
+pdflatex FBDE
