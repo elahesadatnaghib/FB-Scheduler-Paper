@@ -661,6 +661,24 @@ Airmass is one of the major obstacles for high-quality observation. Although zen
 
 XXX--oh, it could be fun to also show minion\_1016. Then there's a nice story about how minion was very focused on slew time, so it fell over to high airmass. Then astro-lsst-01 put a lot of weight on airmass, which drove things to the meridian, but also too close to zenith which results in larger slew times. Then the modified feature based uses a mask to force meridian scanning (where it makes sense in) while allowing azimuthal scanning for regions of sky that pass close to the zenith. Could do 3x3 figures with top row alt,az count map, 2nd row the mean airmass maps, and final row the histograms of the airmass maps. Then it's clear we're getting the best of both worlds and have eliminated the long tails in OpSim (even astro-lsst-01 has stuff out at an airmass of 2.4 for no good reason). Could even put dates on the runs (and have them go left-to-right).
 
+XXX--Ideally, we would compare the final depth of each simulated survey to judge their performance. Unfortunately, the simulations have been run with different sky background models and different weather downtime values, making a direct depth comparison impossible. We can make an approximate comparison by combining the surveys' open shutter fraction (OSF), median airmass, and if observations are dithered. The open shutter fraction is the total time the telescope camera shutter was open divided by the total time it could have been open. This measures how well a scheduler is minimizing slew times and filter changes.  The median airmass measures how intelligently the scheduler is pointing the telescope, as lower airmasses have higher throughput. Finally, the default sky tessellation adopted by LSST includes significant overlap between fields, resulting in XXX\% of the sky being covered by more than one field. By dithering the pointings, the median number of observations at a typical point in the sky increases by $\sim15$\%. Dithering is also essential for removing systematic effect for science cases such as measuring galaxy counts \citep{Awan2016}. In Table~\ref{OSF_table}, we compare our modified feature based scheduler to two proposal based surveys produced by the LSST collaboration. The table shows that there is a tension between airmass and slewtime. The minion\_1016 gives high weight to minimizing slewtime, thus has the best OSF, but takes observations at high airmass. Meanwhile  astro-lsst-01\_2013 gives a high weight to observing at low airmass, resulting in a lower OSF. In the $r$\ filter where atmospheric extinction is less relevant, minion\_1016 has a higher throughput while astro-lsst-01\_2013 has higher throughput in the $g$\ filter. By including dithering, the modified feature based scheduler vastly outperforms the other surveys in both the blue and red filters. The MFB simulation has the lowest OSF, but this is an initial simulation where the basis function weights have not been optimized, so there is potential for further gains. Using the MFB to schedule observations in large blocks could improve the OSF as shown in (Rothchild et al in prep).
+
+XXX-put in a plot of alt/az for the three surveys. 
+
+
+\begin{deluxetable}{lccccc}\label{OSF_table}
+\tablecaption{Comparison of three different survey algorithms in a section of the LSST Wide-Fast-Deep survey area.}
+\tablehead{
+\colhead{Survey} & \colhead{OSF} & \colhead{median Airmass} & \colhead{dithered} & \colhead{$r$\%} & \colhead{$g$\%}
+}
+\startdata
+FB & 0.705 & 1.1 & yes & 63.7 & 47.0 \\
+minion\_1016 & 0.736 & 1.2 & no & 55.3 & 40.0 \\
+astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
+\enddata
+\end{deluxetable}
+
+
 
 \begin{figure}[h!]
 \plottwo{Figures/OpSim10yrs_AltAz.png}{Figures/FB10yrs_AltAz.png}
