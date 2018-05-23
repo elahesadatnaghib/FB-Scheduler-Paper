@@ -34,7 +34,7 @@
 
 \begin{document}
 \title{A Framework for Telescope Schedulers: With Applications to the Large Synoptic Survey Telescope}
-\author{Elahesadat Naghib, Peter Yoachim, Robert J. Vanderbei, Andrew J. Connolly}
+\author{Elahesadat Naghib, Peter Yoachim, Robert J. Vanderbei, Andrew J. Connolly, Lynne Jones}
 
 %\affil[a]{Princeton University}
 %\affil[b]{Princeton University}
@@ -396,9 +396,9 @@ For designing the features, it is important to avoid redundancy and ensure the i
 
 This section presents the features in Table (\ref{tab_features}), designed to efficiently carry the determining information with a modular approach. Each feature is denoted by $f_k(i,f,t)$ for $k= 1..7$, and indexed by the triplet of $(i,f,t)$, field, filter, and time. To make a decision at $t$, the scheduler computes all of the seven features for all of the $(i,f)$ pairs in general, however, there are some features that don't change in every time step, for instance, if $i$ is not visited at $t^j$, then $f_5(i,f,t^j)= f_5(i,f,t^{j+1})$. For such cases, the implementation has a categorized updating procedure to avoid extra computations.
 
-
-\begin{table}[h]
-\begin{tabularx}{\textwidth}{| l | X |}
+\begin{table}
+\caption{Features of the approximated Markovian model for the telescope-environment system. Features $f_{1\dots 7}$ provide a memoryless, approximate description of the system's state.}
+\begin{tabularx}{\textwidth}{|l|X|}
 \hline
 Notation & Definition\textbackslash Description\\ \hline \hline 
 $f_1(i,f,t)$ & ($slew(id(t),i)+settling(id(t),i)+\Delta t_{f} I_{ft(t) \neq f} \vee t_{dome}(i)$): either the time required to point the telescope to $i$, and change the filter to $f$, or the time required to relocate the dome to make $i$ visible. Whichever that is larger.\\ \hline
@@ -411,6 +411,7 @@ $f_7(i,t)$  & hour angle of field $i$ at $t$.\\ \hline
 \hline
 \end{tabularx}
 \end{table}\label{tab_features}
+
 
 \subsection{Basis functions of the telescope scheduler}\label{sec_lsst_bfs}
 
@@ -435,6 +436,7 @@ Accordingly, the basis functions of the LSST scheduler, are designed to formaliz
 
 
 \begin{table}[h]
+\caption{Basis functions of the Feature-Based scheduler which are building blocks of the decision function.}
 \begin{tabularx}{\textwidth}{| l | X |}
 \hline
 Notation & Definition\textbackslash Description\\ \hline \hline
@@ -501,6 +503,7 @@ Figure~\ref{fig_controlability}, contains slices of the 5-dimensional $U_{\theta
 
 
 \begin{table}[h!]\label{tab_regionBF}
+\caption{Adjustments of the basis functions based on the requirements of each region.}
 \begin{tabularx}{\textwidth}{| X | X |}
 \hline
 Modified basis functions & Description\\ \hline \hline
@@ -542,9 +545,10 @@ The scheduler's decision at each time step is an admissible pair of field-filter
 Exact expression of the LSST scheduler constraints are presented in Table~\ref{tab_feasibility}.
 
 \begin{table}[h!]
+\caption{Feasibility of field-filter $(i,f)$ for a visit at $t^{n+1}$, as evaluated at $t^n$.}
 \begin{tabularx}{\textwidth}{| l | X | X | l |}
 \hline
-& Feasibility of field-filter $(i,f)$ for a visit at $t^{n+1}$, as evaluated at $t^n$& Description & region\\ \hline \hline
+& Constraints& Description & region\\ \hline \hline
 
 1&$ \tau_{rise}(i,f,t^{n+1}) \leq t^{n+1} \leq \tau_{set}(i,f,t^{n+1}) $ & field-filter $(i,f)$ has to be above the acceptable airmass horizon at $t^{n+1}.$ & All regions\\ \hline
 
@@ -583,9 +587,9 @@ r(s_{i-1}, s_i) = -slew(id(t_{i-1}), id(t_{i})) - am(id(t_i))
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.7\linewidth]{Figures/TDcurve.png}
+\includegraphics[width=0.5\linewidth]{Figures/TDcurve.pdf}
 \end{center}
-\caption{}
+\caption{Reinforcement learning of the scheduler's parameters, $(\theta_1,\theta_2,\theta_3,\theta_4,\theta_5)$. All of the parameters are initialized at the mid-range value, 5. During the simulation, at each step there is a cost associated with the decision which implies a small adjustment on each of the five parameters. Then the next decision will be taken with a slightly different set of variables. This procedure continues until the adjustments on the variables are negligible.}
 \label{fig_theta_conv}
 \end{figure}
 
@@ -597,7 +601,7 @@ For the above choice of reward, $\theta$ converges to the following solution:
 
 In this approach, the computational time to evaluate the update is negligible with respect to the time required to evaluate the features, therefore, the computational time of the reinforcement learning is almost equal to the simulation of the scheduling (without any updates) which is linear with respect to the number of the decisions. With a personal computer \footnote{Processor: 1.6 GHz, Memory: 4 GB 1600 MHz DDR3}, each decision takes about $0.5$ second, thus the time of the convergence for the simulation, presented in this session is $3000\times 0.8 \text{ sec } = 40 \text{ minutes }$.
 
-\subsection{Global optimization}
+\subsection{Global optimization}\label{sec_globalopt}
 
 One of the important simple objective functions that cannot be expressed as the discounted sum of the rewards is the total number of the observations in an episode of the simulated operation from $t_i$ to $t_j$,
 
@@ -628,8 +632,8 @@ We used the above objective function (\ref{equ_lsst_ede}) for $t_i = 2462867.5~m
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.5\linewidth]{Figures/eDEObjectiveFunction.png}
-\caption{Progress of the objective function (\ref{equ_lsst_ede})} over the iterations of the $e$DE algorithm.
+\includegraphics[width=0.5\linewidth]{Figures/eDEObjectiveFunction.pdf}
+\caption{Progress of the objective function (\ref{equ_lsst_ede}) over the iterations of the $e$DE algorithm. As defined in Section \ref{sec_globalopt}, $U_{\pi_{\theta}}$, for this simulation is the total number of the observations for 10 nights starting from January 1, 2021.}
 \label{fig_eDEObjectiveFunction}
 \end{center}
 \end{figure}
@@ -670,7 +674,7 @@ For a survey telescope, the distribution of the co-added depth over the visible 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{Figures/ZoominG}
-\caption{A zoomed-in crop of the co-added depth coverage of Figure \ref{fig_10yrs_skymap} in the \textit{g}-band. The smooth coverage of the Modified Feature-Based scheduler (left) versus the granular pattern of \textit{astro-lsst-01-2013} (right) offers a more uniform co-added depth in the micro-scale coverage quality.}
+\caption{A zoomed-in crop of the co-added depth coverage of Figure \ref{fig_10yrs_skymap} in the \textit{g}-band. The smooth coverage of the Modified Feature-Based scheduler (right) versus the granular pattern of \textit{astro-lsst-01-2013} (right) offers a more uniform co-added depth in the micro-scale coverage quality.}
 \label{fig_zoomin_g}
 \end{figure}
 
@@ -693,8 +697,8 @@ In addition to uniformity of the coverage, the LSST mission calls for pairs of t
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=.5\linewidth]{Figures/PairHist.png}
-\caption{The Feature-Based scheduler in compare with \textit{astro-lsst-01-2013}, sacrifices perfect visit-in-pair for a limited area of the visible sky (with a lower mean) to maintain a uniform ratio of visit-in-pair for a larger area of the sky (with a sharper distribution)}
+\includegraphics[width=.4\linewidth]{Figures/PairHist.pdf}
+\caption{Normalized frequency of visits-in-pair ratio, in any of the \textit{g}, \textit{r}, and \textit{i} filters. The Feature-Based scheduler in compare with \textit{astro-lsst-01-2013}, sacrifices perfect visit-in-pair for a limited area of the visible sky (with a lower mean) to maintain a uniform ratio of visit-in-pair for a larger area of the sky (with a sharper distribution)}
 \label{fig_10yrs_pair_hist}
 \end{figure}
 
@@ -719,8 +723,29 @@ astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
 
 
 \begin{figure}[h!]
-\plottwo{Figures/OpSim10yrs_AltAz.png}{Figures/FB10yrs_AltAz.png}
-\caption{Each plot is the distribution of the co-added depth on an altitude-azimuth map in one of the six filters for 10 years of the simulation. The higher concentration on the meridian (vertical axis) for the Modified feature-Based scheduler (right) shows a more desirable behavior, because, in general visits closer to the meridian are more efficient in terms of the quality of the visit compare to visits farther from the meridian with the same exposure time.}
+
+\begin{center}$
+\begin{array}{rl cc rl}
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf}&    &  &
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf}\\
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf}&    &  &
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf}\\
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/opsim_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf}&    &  &
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf}&
+\includegraphics[width=.25\linewidth]{Figures/FB_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf}\\
+\end{array}$
+\end{center}
+
+
+
+
+
+\caption{Each plot is the altitude azimuth visit distribution in one of the six filters for 10 years of simulation. The two left columns belong to the \textit{astro-lsst-01-2013} simulation and the two right columns belong to a simulation of the Modified Feature-Based scheduler. The higher concentration on the meridian (vertical axis) for the Modified feature-Based scheduler shows a more desirable behavior. Moreover, consistent concentration of the visits on the east wing can potentially provide a better visit-in-pair behavior}
 \label{fig_10yrs_AltAz}
 \end{figure}
 
@@ -732,7 +757,7 @@ astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
 \plotone{Figures/astro-lsst-01_2013_Observation_Density_HEAL_SkyMap.pdf}
 \plotone{Figures/FB_Observation_Density_HEAL_SkyMap.pdf}
 \epsscale{1}
-\caption{The altitude azimuth pointing distribution for three LSST simulations. On the left, the proposal based minion\_1016 simulation takes most observations at high airmass and very few on the meridian. In the middle, the astro-lsst-01\_2013 simulation takes many observations on the meridian, but still executes deep drilling fields and a smattering of other observations at high airmass. On the right, the feature based simulation concentrates observations, including deep drilling fields, while avoiding observing near zenith. }\label{fig_all_alt_az}
+\caption{The altitude azimuth visit distribution for three LSST simulations. On the left, the proposal based minion\_1016 simulation takes most observations at high airmass and very few on the meridian. In the middle, the astro-lsst-01\_2013 simulation takes many observations on the meridian, but still executes deep drilling fields and a smattering of other observations at high airmass. On the right, the feature based simulation concentrates observations, including deep drilling fields, while avoiding observing near zenith. }\label{fig_all_alt_az}
 \end{figure}
 
 \section{Concluding remarks}\label{sec_conclusion}
@@ -746,7 +771,7 @@ Furthermore, the required computational resource for the training/optimizing of 
 
 
 \acknowledgments
-XXX-Thanks everybody! (XXX-This is generally where who's supported by what goes)
+We would like to thank the LSST corporation's leadership for the financial support of this work, and the DIRAC Institute's faculty and researchers for providing expertise, without which this research would not have been possible. In particular, Professor Zeljko Ivezic whose consistent attention and insightful comments greatly assisted this work. We would also like to show our gratitude to the LSST experts in other institutes, specially Professor Michael Strauss, Professor Christopher Stubbs, and Dr. Robert Lupton for their insightful comments spanning from the idea stage to the end of this project.
 
 \facility{LSST}
 
