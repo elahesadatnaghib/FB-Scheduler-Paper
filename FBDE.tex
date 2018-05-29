@@ -42,13 +42,15 @@
 %\maketitle
 %\begin{multicols}{2}
 
-\begin{center}
-\textbf{Key terms and notations}\
-\noindent\rule{\textwidth}{0.4pt}
-\end{center}
+\begin{abstract}
 
+Feature-Based telescope scheduler is an automated, proposal-free decision making algorithm that offers \textit{controllability} of the behavior, \textit{adjustability} of the mission, and quick \textit{recoverability} from interruptions for large ground-based telescopes. It is easy to understand, implement and troubleshoot because of its coherent mathematical representation. Accordingly it can be modified by the astronomy community for context-dependent adjustments. This paper presents a raw version of the Feature-Based scheduler, with minimal manual tailoring, to demonstrate its potential and flexibility as a foundation for large ground-based telescope schedulers that can later be adjusted for other instruments. In addition, an adjusted version of the Feature-Based scheduler for LSST is introduced and compared to previous LSST scheduler simulations.
+\end{abstract}
+
+\section*{}
 \begin{table}[h]
-\begin{tabularx}{\textwidth}{l  X }
+\begin{tabular}{l  l }
+\multicolumn{2}{c}{\textbf{Key terms and notations}}\\ \hline
 fields & fixed partitions of the sky that can be covered in a single visit, \\
 $N_{f}$ & total number of the fields,\\
 $t$& Greenwich Mean Time, in Modified Julian Date,\\ 
@@ -68,17 +70,10 @@ $br(i,t)$ & brightness of the sky at the center of field $i$ at $t$,\\
 $\sigma(i,t)$ & seeing of the sky at the center of field $i$ at $t$,\\
 $K(i,f, t)$ & atmospheric extinction coefficient\\
 $W_1, W_2$ & given constant time window within which a revisit is valid, \\
-$I_{survey}$ & set of all fields in $survey \in \{WFD,DD,NES,GP,SCP\}$ ,\\
-\end{tabularx}
+$I_{survey}$ & set of all fields in $survey \in \{WFD,DD,NES,GP,SCP\}$ ,\\ \hline
+\end{tabular}
 \end{table}
-\noindent\rule{\textwidth}{0.4pt}\\
 \newpage
-
-\begin{abstract}
-
-Feature-Based telescope scheduler is an automated, proposal-free decision making algorithm that offers \textit{controllability} of the behavior, \textit{adjustability} of the mission, and quick \textit{recoverability} from interruptions for large ground-based telescopes. It is easy to understand, implement and troubleshoot because of its coherent mathematical representation. Accordingly it can be modified by the astronomy community for context-dependent adjustments. This paper presents a raw version of the Feature-Based scheduler, with minimal manual tailoring, to demonstrate its potential and flexibility as a foundation for large ground-based telescope schedulers that can later be adjusted for other instruments. In addition, an adjusted version of the Feature-Based scheduler for LSST is introduced and compared to previous LSST scheduler simulations.
-\end{abstract}
-
 \section{Introduction}
 
 The Large Synoptic Survey telescope (LSST), the top national ground-based telescope of the NASA 2010 Decadal Review, with the largest digital camera that has ever been built for astronomy, offers an optical throughput of more than 50 times greater than the best current value \citep{tyson2002large}. Scientific investigations with LSST range from the solar system objects to the edge of the optical universe. 
@@ -725,7 +720,7 @@ In addition to uniformity of the coverage, the LSST mission calls for pairs of v
 
 For a ground-based instrument, airmass is one of the major obstacles for high-quality observation. Although zenith observations have the minimum airmass, off-zenith observations cannot be avoided, in which case, observations around the meridian provide high quality data and consequently more efficient operation of the telescope. Figure~\ref{fig_10yrs_AltAz} compares the number density of the visits on an altitude-azimuth sky map in each of the six filters $[u,g,r,i,z,y]$. Clearly in all of the filters, the modified Feature-Based scheduler schedules more visits around the desirable meridian zone. In addition, it offers a consistent concentration peak on the east wings, which is essential for a higher success rate for the visit-in-pair constraint. Because, if the first visit of the night occurs when the field is on the east side of the sky, it provides a longer time opportunity for the second visit of the same night. Note that adjustability of the Feature-Based scheduler allows for a significant change in the behavior, in this case a variant of the marching army cadence is incorporated to control the location of the visits through a basis function modification.
 
-For a multi-mission, survey telescope, such as LSST, comparing the performance of the different schedules is a difficult task. Particularly because of the large number of the competing factors that are involved in the performance evaluation. In some cases involving the importance of each area of astronomy, the criteria are not even objective. We conclude this section with a general comparison by combining the surveys' open shutter fraction (OSF), and median airmass of the observations. The open shutter fraction is the total time that the telescope camera shutter was open divided by the total time it could have been open. This reveals how time-efficiently the observations have been scheduled. The median airmass reflects the overall quality of the collected data. Generally speaking, observations in lower airmass allows for a higher data quality. Figure~\ref{fig_all_alt_az} visualizes the number density of the visits on an altitude-azimuth sky map for the modified Feature-Based scheduler with the most recent LSST baseline schedules \textit{astro-lsst-01-2013} and \textit{minion\_1016}. Table~\ref{OSF_table}, shows that there is a trade-off between airmass and OSF. For instance \textit{minion\_1016}, offers the best OSF (time efficiency), while the median armass is the worst. (data quality). Meanwhile \textit{astro-lsst-01\_2013} offers low airmass abservations, resulting in a lower OSF. Moreover, in the $r$\ filter where atmospheric extinction is less relevant, \textit{minion\_1016} has a higher total throughput while \textit{astro-lsst-01\_2013} has higher throughput in the $g$\ filter. By including dithering, the modified Feature-Based scheduler vastly outperforms the other surveys in both the blue and red filters. The Modified Feature-Based simulation has the lowest OSF, but this is an initial simulation where the basis function weights have not been optimized, so there is potential for further improvements. Moreover using the Modified Feature-Based scheduler for observations in large blocks could improve the OSF as shown in D. Rothchild et al. (2018, in preparation).
+For a multi-mission, survey telescope, such as LSST, comparing the performance of the different schedules is a difficult task. Particularly because of the large number of the competing factors that are involved in the performance evaluation. In some cases involving the importance of each area of astronomy, the criteria are not even objective. We conclude this section with a general comparison by combining the surveys' open shutter fraction (OSF), and median airmass of the observations. The open shutter fraction is the total time that the telescope camera shutter was open divided by the total time it could have been open. This reveals how time-efficiently the observations have been scheduled. The median airmass reflects the overall quality of the collected data. Generally speaking, observations in lower airmass allows for a higher data quality. Figure~\ref{fig_all_alt_az} visualizes the number density of the visits on an altitude-azimuth sky map for the modified Feature-Based scheduler with the most recent LSST baseline schedules \textit{astro-lsst-01-2013} and \textit{minion\_1016}. Table~\ref{OSF_table}, shows that there is a trade-off between airmass and OSF. For instance \textit{minion\_1016}, offers the best OSF (time efficiency), while the median armass is the worst. (data quality). Meanwhile \textit{astro-lsst-01\_2013} offers low airmass observations, resulting in a lower OSF. Moreover, in the $r$\ filter where atmospheric extinction is less relevant, \textit{minion\_1016} has a higher total throughput while \textit{astro-lsst-01\_2013} has higher throughput in the $g$\ filter. By including dithering, the modified Feature-Based scheduler vastly outperforms the other surveys in both the blue and red filters. The Modified Feature-Based simulation has the lowest OSF, but this is an initial simulation where the basis function weights have not been optimized, so there is potential for further improvements. Moreover using the Modified Feature-Based scheduler for observations in large blocks could improve the OSF as shown in D. Rothchild et al. (2018, in preparation).
 
 
 
