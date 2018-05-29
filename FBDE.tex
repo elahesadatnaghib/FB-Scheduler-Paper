@@ -1,5 +1,5 @@
-\documentclass[12pt]{aastex62}
-\usepackage[utf8]{inputenc}
+\documentclass[11pt]{article}
+%\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
  
 %\usepackage{multicol}
@@ -13,16 +13,19 @@
 \usepackage{amsthm}
 \usepackage{tabularx}
 \usepackage[]{hyperref}
-%\usepackage{graphicx}
-%\usepackage{subcaption}
+\usepackage[doublespacing]{setspace}
+\usepackage{graphicx}
+\usepackage{subcaption}
 %\graphicspath{ {Figures/} }
+\usepackage[a4paper,left=1in,top=1in,right=1in,bottom=1in,nohead]{geometry}
 
-%\renewcommand{\baselinestretch}{1.3}
-\topmargin 0.0cm
-\oddsidemargin 0.2cm
-\textwidth 16cm 
-\textheight 21cm
-\footskip 1.0cm
+%\topmargin 0.0cm
+%\leftmargin -2.5 cm
+%\rightmargin -2.5 cm
+%\oddsidemargin 0.2cm
+%\textwidth 16cm 
+%\textheight 21cm
+%\footskip 1.0cm
 
 \newtheorem{prop}{Proposition}
 \theoremstyle{definition}
@@ -42,6 +45,12 @@
 %\maketitle
 %\begin{multicols}{2}
 
+
+
+\begin{abstract}
+
+Feature-Based telescope scheduler is an automated, proposal-free decision making algorithm that offers \textit{controllability} of the behavior, \textit{adjustability} of the mission, and quick \textit{recoverability} from interruptions for large ground-based telescopes. It is easy to understand, implement and troubleshoot because of its coherent mathematical representation. Accordingly it can be modified by the astronomy community for context-dependent adjustments. This paper presents a raw version of the Feature-Based scheduler, with minimal manual tailoring, to demonstrate its potential and flexibility as a foundation for large ground-based telescope schedulers that can later be adjusted for other instruments. In addition, an adjusted version of the Feature-Based scheduler for LSST is introduced and compared to previous LSST scheduler simulations.
+\end{abstract}
 \begin{center}
 \textbf{Key terms and notations}\
 \noindent\rule{\textwidth}{0.4pt}
@@ -72,30 +81,23 @@ $I_{survey}$ & set of all fields in $survey \in \{WFD,DD,NES,GP,SCP\}$ ,\\
 \end{tabularx}
 \end{table}
 \noindent\rule{\textwidth}{0.4pt}\\
-\newpage
-
-\begin{abstract}
-
-Feature-Based telescope scheduler is an automated, proposal-free decision making algorithm that offers \textit{controllability} of the behavior, \textit{adjustability} of the mission, and quick \textit{recoverability} from interruptions for large ground-based telescopes. It is easy to understand, implement and troubleshoot because of its coherent mathematical representation. Accordingly it can be modified by the astronomy community for context-dependent adjustments. This paper presents a raw version of the Feature-Based scheduler, with minimal manual tailoring, to demonstrate its potential and flexibility as a foundation for large ground-based telescope schedulers that can later be adjusted for other instruments. In addition, an adjusted version of the Feature-Based scheduler for LSST is introduced and compared to previous LSST scheduler simulations.
-\end{abstract}
-
 \section{Introduction}
 
-The Large Synoptic Survey telescope (LSST), the top national ground-based telescope of the NASA 2010 Decadal Review, with the largest digital camera that has ever been built for astronomy, offers an optical throughput of more than 50 times greater than the best current value \citep{tyson2002large}. Scientific investigations with LSST range from the solar system objects to the edge of the optical universe. 
+The Large Synoptic Survey telescope (LSST), the top national ground-based telescope of the NASA 2010 Decadal Review, with the largest digital camera that has ever been built for astronomy, offers an optical throughput of more than 50 times greater than the best current value \cite{tyson2002large}. Scientific investigations with LSST range from the solar system objects to the edge of the optical universe. 
 
-Even with the powerful engine that enables this telescope to slew fast, satisfying all of the desirables and constraints is a challenging problem. Specifically, the LSST's science-driven mission (explained in \citep{ivezic2008large}) is highly constrained and contains competing objectives that are vastly different in nature, due to the different nature of the scientific expectations. In this paper, we propose a framework to formulate the problem of scheduling for large ground-based telescopes such as LSST then introduce a scheduler based on the proposed model.
+Even with the powerful engine that enables this telescope to slew fast, satisfying all of the desirables and constraints is a challenging problem. Specifically, the LSST's science-driven mission (explained in \cite{ivezic2008large}) is highly constrained and contains competing objectives that are vastly different in nature, due to the different nature of the scientific expectations. In this paper, we propose a framework to formulate the problem of scheduling for large ground-based telescopes such as LSST then introduce a scheduler based on the proposed model.
 
-First generation schedulers for astronomical purposes were developed for space missions to automate their operation due to their inaccessibility, in addition to optimize their scientific productivity. ROSAT mission's scheduler in 1990 \citep{nowakovski1999using},  Spike \citep{johnston1994spike}, Hubble Telescope's scheduler in 1994, and HSTS \citep{muscettola1995automating} in 1995 are amongst pioneering developments on algorithmic scheduling of observations in the space missions. 
+First generation schedulers for astronomical purposes were developed for space missions to automate their operation due to their inaccessibility, in addition to optimize their scientific productivity. ROSAT mission's scheduler in 1990 \cite{nowakovski1999using},  Spike \cite{johnston1994spike}, Hubble Telescope's scheduler in 1994, and HSTS \cite{muscettola1995automating} in 1995 are amongst pioneering developments on algorithmic scheduling of observations in the space missions. 
 
 Despite the similarity of the ultimate goal in the missions of space telescopes and ground-based telescopes, determining factors for the purpose of scheduling are fundamentally different. While space-based telescopes are required to respect kinematical and dynamical constraints, earth's atmosphere is the main challenge in the scheduling of ground-based telescopes. The former is predictable and efficiently computable, while the later involves both inherent uncertainties, and uncertainties due to the computational limitations. 
 
-Earlier systematic approaches to the scheduling of ground-based telescopes are heavily based on hand-crafted observation proposals that are generally tested only for feasibility, but not necessarily for optimality. For instance,  Keck Telescope, 1993 \citep{nelson1985design} is run 100\% based on proposals, and Hobby-Eberly Telescope 1997 \citep{shetrone2007ten} has a semi-manual scheduling scheme. 
+Earlier systematic approaches to the scheduling of ground-based telescopes are heavily based on hand-crafted observation proposals that are generally tested only for feasibility, but not necessarily for optimality. For instance,  Keck Telescope, 1993 \cite{nelson1985design} is run 100\% based on proposals, and Hobby-Eberly Telescope 1997 \cite{shetrone2007ten} has a semi-manual scheduling scheme. 
 
-Later, appearance of more expensive ground-based instruments with complex missions made it impossible to rely on hand-crafted proposals solely. Need for more efficient use of the instrument's time lead to the development of decision making algorithms for accessible facilities as well, and mainly to optimize their science output. For instance, scheduler of the Liverpool robotic telescope was designed in 1997 to automate and optimize the procedure of time allocation to chunks of scripted schedules. The time allocation strategy was preferred to the scheduling at the single visit level which is referred to as optimum scheduling by the authors of \citep{steele1997control}. The reason for choosing the time allocation scheme instead of optimum scheduling is stated to be the lack of recoverability of the latter choice in case of an interruption, because it potentially leads to excessive computational cost to reevaluate the sequence once it is interrupted. In this paper, we show that scheduling in the single visit level can be quickly recoverable in a memoryless framework, thus the optimality can be preserved. Another example is the Las Cumbres Observatory Global Telescope Network (LCOGT) with one of the most advanced telescope scheduling algorithms \citep{Boroson14, Saunders14}. LCOGT uses an integer linear programming (ILP) model, solved with the Gurobi algorithm \citep{gurobi}, to optimize the scheduling of observations over a global network of telescopes \citep{Lampoudi15}. Due to the success of this approach the Zwicky Transient Facility at Palomar Observatory \citep{Bellm14} has also adopted an ILP scheduler\footnote{GitHub repository: \url{https://github.com/ZwickyTransientFacility/ztf_sim}}. The ILP scheduling model performs well for observatories where slew overheads are small compared to exposure execution time. LCOGT is able to schedule observations in long contiguous blocks. In contrast, the LSST plans to have observations of about 30 seconds with slew times up to 2 minutes, hence it requires a scheduling algorithm that can explicitly minimize the slew times between successive observations. One could use the ILP scheduling approach to schedule large prescript blocks of observations for LSST. The blocks could be set to follow a path that only includes short slews (this is similar to the strategy taken in the scheduler developed by D. Rothchild et al.). The disadvantage of this approach and any other prescript schedule is principally the lack of recoverability from unpredictable conditions, for instance inability to dodge the clouds.
+Later, appearance of more expensive ground-based instruments with complex missions made it impossible to rely on hand-crafted proposals solely. Need for more efficient use of the instrument's time lead to the development of decision making algorithms for accessible facilities as well, and mainly to optimize their science output. For instance, scheduler of the Liverpool robotic telescope was designed in 1997 to automate and optimize the procedure of time allocation to chunks of scripted schedules. The time allocation strategy was preferred to the scheduling at the single visit level which is referred to as optimum scheduling by the authors of \cite{steele1997control}. The reason for choosing the time allocation scheme instead of optimum scheduling is stated to be the lack of recoverability of the latter choice in case of an interruption, because it potentially leads to excessive computational cost to reevaluate the sequence once it is interrupted. In this paper, we show that scheduling in the single visit level can be quickly recoverable in a memoryless framework, thus the optimality can be preserved. Another example is the Las Cumbres Observatory Global Telescope Network (LCOGT) with one of the most advanced telescope scheduling algorithms \cite{Boroson14, Saunders14}. LCOGT uses an integer linear programming (ILP) model, solved with the Gurobi algorithm \cite{gurobi}, to optimize the scheduling of observations over a global network of telescopes \cite{Lampoudi15}. Due to the success of this approach the Zwicky Transient Facility at Palomar Observatory \cite{Bellm14} has also adopted an ILP scheduler\footnote{GitHub repository: \url{https://github.com/ZwickyTransientFacility/ztf_sim}}. The ILP scheduling model performs well for observatories where slew overheads are small compared to exposure execution time. LCOGT is able to schedule observations in long contiguous blocks. In contrast, the LSST plans to have observations of about 30 seconds with slew times up to 2 minutes, hence it requires a scheduling algorithm that can explicitly minimize the slew times between successive observations. One could use the ILP scheduling approach to schedule large prescript blocks of observations for LSST. The blocks could be set to follow a path that only includes short slews (this is similar to the strategy taken in the scheduler developed by D. Rothchild et al.). The disadvantage of this approach and any other prescript schedule is principally the lack of recoverability from unpredictable conditions, for instance inability to dodge the clouds.
 
-Still, in spite of the reliability of the fully automatic scheduling technologies, there are modern, expensive telescopes such as SALT, 2005 \citep{brink2008salt}, and ALMA 2013 \citep{wootten2003atacama} that are run based only on traditional hand-crafted proposals. ALMA in particular, requires a highly regulated structure for proposals that potentially leads to suboptimality as discussed in \citep{alexander2017enabling}, where the authors suggest a number of corrections for the scheduling regulations to provide adaptivity to time-sensitive observations. However, even with occasional corrections, a verbal policy does not provide verifiable adjustability to the change of mission, as the operation of the telescope reveals newfound scientific desirables. 
+Still, in spite of the reliability of the fully automatic scheduling technologies, there are modern, expensive telescopes such as SALT, 2005 \cite{brink2008salt}, and ALMA 2013 \cite{wootten2003atacama} that are run based only on traditional hand-crafted proposals. ALMA in particular, requires a highly regulated structure for proposals that potentially leads to suboptimality as discussed in \cite{alexander2017enabling}, where the authors suggest a number of corrections for the scheduling regulations to provide adaptivity to time-sensitive observations. However, even with occasional corrections, a verbal policy does not provide verifiable adjustability to the change of mission, as the operation of the telescope reveals newfound scientific desirables. 
 
-It seems that refusing to adopt the cutting-edge technology of fully automated scheduling for modern astronomical instruments is mainly due to the rooted notion of the observation proposals that perfectly served the scheduling of smaller, slower, and single-mission instruments in the past. This also could be a result of astronomer's lack of trust toward the performance of the decision making machines in every levels of the scheduling. The LSST community, however, in addition to a proposal-based scheduler, introduced in \citep{delgado2016lsst}, have been supporting the design and implementation of proposal-free decision machines, such as Feature-Based scheduler, first introduced in \citep{naghib2016feature}, as well as a variant of the fast marching army cadence by D. Rothchild et al. (2018, in preparation) that explore the possibility of a new generation of the schedulers for fast, multi-mission, big-data collecting instruments. 
+It seems that refusing to adopt the cutting-edge technology of fully automated scheduling for modern astronomical instruments is mainly due to the rooted notion of the observation proposals that perfectly served the scheduling of smaller, slower, and single-mission instruments in the past. This also could be a result of astronomer's lack of trust toward the performance of the decision making machines in every levels of the scheduling. The LSST community, however, in addition to a proposal-based scheduler, introduced in \cite{delgado2016lsst}, have been supporting the design and implementation of proposal-free decision machines, such as Feature-Based scheduler, first introduced in \cite{naghib2016feature}, as well as a variant of the fast marching army cadence by D. Rothchild et al. (2018, in preparation) that explore the possibility of a new generation of the schedulers for fast, multi-mission, big-data collecting instruments. 
 
 
 
@@ -345,7 +347,7 @@ in which, $0<\alpha<1$ is the learning rate. The first term in the right hand si
 \end{aligned}
 \end{equation}
 
-This Learning method is called \textit{Temporal-Difference} (TD) learning with function approximation \citep{tsitsiklis1997analysis}. Variants of this reinforcement learning method have been successfully applied to real-life problems such as training of a backgammon player \citep{tesauro1995temporal}.
+This Learning method is called \textit{Temporal-Difference} (TD) learning with function approximation \cite{tsitsiklis1997analysis}. Variants of this reinforcement learning method have been successfully applied to real-life problems such as training of a backgammon player \cite{tesauro1995temporal}.
 
 
 Note that to be able to use the TD reinforcement learning method, it is necessary to have a well-behaved notion of the reward that reflects the instant gain of any decision at all of the decision steps. Moreover, the discounted sum of the instant rewards has to reflect the objective of the mission. For instance, in the LSST scheduling problem, after each visit, the negative of the slew time, is a well-defined instant reward that reflects how time-efficiently the telescope is being used, however it does not reflect all aspects of the mission's objective such as, efficiency of the same night revisits (explained in Section~\ref{sec_lsst_problem}), for which there is no equivalent instant reward. For this reason, we also implemented a global optimizer for the LSST scheduler that does not require a notion of the instant reward and directly optimizes the mission's objective function over a limited  episode of the simulated scheduling. 
@@ -359,7 +361,7 @@ In the absence of a well-defined instant reward, instead of solving problem~\ref
 & & U_{\pi_{\theta}}(x_i,x_{i+1}, \dots, x_{j}),
 \end{aligned}
 \end{equation}
-where $U_{\pi_{\theta}}(x_i,x_{i+1}, \dots, x_{j})$ is a utility function that measures the performance of the scheduler on a simulated episode of the operation from $t_i$ to $t_j$ by policy $\pi_{\theta}$. In this approach, a general $U(.)$, can not be explicitly expressed as a function of $\theta$, therefore a global optimizer that can maximize a black-box function is required. We used the $e$DE metaheuristic evolutionary optimizer \citep{naghib2016entropic} which is an an adaptive version of the Differential Evolution (DE) algorithm (\citep{storn1997differential}). DE is generally one of the most efficient evolutionary algorithms and the $e$DE variant uses a notion of entropy to automatically preserve the diversity of the candidate solutions. As a result, in contrast with DE, it does not require the user to choose any tuning parameters for the algorithm, which is the most time-consuming task in using an evolutionary optimizer. In addition, $e$DE, similar to any other evolutionary algorithm is highly parallelizable, and the computational time can be almost linearly decreased with respect to the number of computational cores.  
+where $U_{\pi_{\theta}}(x_i,x_{i+1}, \dots, x_{j})$ is a utility function that measures the performance of the scheduler on a simulated episode of the operation from $t_i$ to $t_j$ by policy $\pi_{\theta}$. In this approach, a general $U(.)$, can not be explicitly expressed as a function of $\theta$, therefore a global optimizer that can maximize a black-box function is required. We used the $e$DE metaheuristic evolutionary optimizer \cite{naghib2016entropic} which is an an adaptive version of the Differential Evolution (DE) algorithm (\cite{storn1997differential}). DE is generally one of the most efficient evolutionary algorithms and the $e$DE variant uses a notion of entropy to automatically preserve the diversity of the candidate solutions. As a result, in contrast with DE, it does not require the user to choose any tuning parameters for the algorithm, which is the most time-consuming task in using an evolutionary optimizer. In addition, $e$DE, similar to any other evolutionary algorithm is highly parallelizable, and the computational time can be almost linearly decreased with respect to the number of computational cores.  
 
 \section{Problem of Scheduling for LSST}\label{sec_lsst_problem}
 
@@ -367,13 +369,13 @@ The LSST mission is to uniformly scan the visible sky within 5 different regions
 
 \begin{figure}[h!]
 \begin{center}
-%\includegraphics[width=.6\linewidth]{minion_1016_proposal_footprint.pdf}
-\plotone{Figures/minion_1016_proposal_footprint.pdf}
-\caption{Regions of the sky with different requirements and constraints for scheduling: (1) Galactic Plane Region (GP), (2) Universal or Wide Fast Deep (WFD), (3) South Celestial Pole (SCP), (4) North Ecliptic Spur (NES), and (5) Deep Drilling Fields (DD). This figure is taken from \citep{jones2017large}.}
+\includegraphics[width=.6\linewidth]{Figures/minion_1016_proposal_footprint.pdf}
+%\plotone{Figures/minion_1016_proposal_footprint.pdf}
+\caption{Regions of the sky with different requirements and constraints for scheduling: (1) Galactic Plane Region (GP), (2) Universal or Wide Fast Deep (WFD), (3) South Celestial Pole (SCP), (4) North Ecliptic Spur (NES), and (5) Deep Drilling Fields (DD). This figure is taken from \cite{jones2017large}.}
 \end{center}
 \end{figure}\label{fig_proposals}
 
-The desirables and the constraints for different regions vary in both quantity and quality, see \citep{ivezic2008lsst} for a detailed explanation of the surveys associated with the sky regions. The notion of the features however, enables the scheduler to systematically fetch all of the various requirements and turn them into comparable quantities for the purpose of the decision making in the Markovian framework.
+The desirables and the constraints for different regions vary in both quantity and quality, see \cite{ivezic2008lsst} for a detailed explanation of the surveys associated with the sky regions. The notion of the features however, enables the scheduler to systematically fetch all of the various requirements and turn them into comparable quantities for the purpose of the decision making in the Markovian framework.
 
 The proposed feature-space of the LSST contains seven features (see Section~\ref{sec_lsst_features} for the definition of features), each can be evaluated given a field $i$, a filter $f$, and a time $t$. The fields discretize the visible sky through a fixed partitioning with ID numbers preassigned to them. Each field can be captured through a single visit, that lasts for about 30 seconds. There are 6 possible filters, $[u,g,r,i,z,y]$, for a visit. And finally the time domain is discretized by the natural timing of the process. In other words, $t_j$ is exactly the moment that the $j$'th visit is over and the scheduler makes a decision for the next visit. Since a consecutive visit of the same field-filter is not allowed, there is a slew time between any two decisions, therefore $t_{j} - t_{j-1} > 0$. On the other hand, the operation is over a limited time horizon, $T$, thus the number of the decision time steps is finite. A finitely discretized sky, a finite number of the filters and a finite number of the time steps, define a finite feature-space, denoted by $\{(f_1(i,f,t_j)\dots f_7(i,f,t_j)): i = 1\dots n_f, f\in \{u,g,r,i,z,y\}, j = 0,\dots N\}$.
 
@@ -384,14 +386,14 @@ Then the implication of the policy, stated in Equation (\ref{equ_approx_pol}), f
 \end{equation}
 where $x_j = [f_{1, \dots,7}(id(t_j),ft(t_j),t_j)]$ is the 7-dimensional state at $t_j$, and $(i,f)$ is a feasible pair of field-filter. Section~\ref{sec_cstr} introduces the constraints under which a field-filter pair, $(i,f)$ is feasible at $t_{j}$. Accordingly, $\pazocal{A}_j$ is  the set of all field-filter pairs that are feasible at $t_j$.
 
-Inline with the modular approach to the implementation of the scheduler, expected value of the basis functions, $E_{\pi}[\Phi_k(x_{j+1})|x_j]$ for $k=1,\dots, 5$ are evaluated in separated modules, developed by the LSST community. For instance, see \citep{sebag2008lsst} and \citep{sebag2007lsst}, for cloud cover measurements at the LSST site that were used to develop a cloud model and, see \citep{yoachim2016optical} for the sky brightness predictive model, specifically developed for the LSST. For the details of the basis functions of the Feature-Based scheduler for LSST refer to Section~\ref{sec_lsst_bfs}.
+Inline with the modular approach to the implementation of the scheduler, expected value of the basis functions, $E_{\pi}[\Phi_k(x_{j+1})|x_j]$ for $k=1,\dots, 5$ are evaluated in separated modules, developed by the LSST community. For instance, see \cite{sebag2008lsst} and \cite{sebag2007lsst}, for cloud cover measurements at the LSST site that were used to develop a cloud model and, see \cite{yoachim2016optical} for the sky brightness predictive model, specifically developed for the LSST. For the details of the basis functions of the Feature-Based scheduler for LSST refer to Section~\ref{sec_lsst_bfs}.
 
 The last step is to implement the training procedures (described in Section~\ref{sec_opt}) on the LSST model to derive $\theta^*$. Training of the LSST scheduler is explained in Section~\ref{sec_lsst_opt} with adopting two sample objective functions. However, the LSST community, and basically any individual can design their own mission objective function, whether it allows for well-defined instant rewards or not, then train the scheduler through the open source training code, and find a new set of $\theta^*$ that principally leads to a different behavior of the scheduler due to different objectives.
 
 
 \subsection{Features of the telescope scheduler}\label{sec_lsst_features}
 
-For designing the features, it is important to avoid redundancy and ensure the inclusion of determining information. It is also critical to hold a modular approach in the delivery of the information to the decision procedure. For instance, consider the amount of time, $\Delta t$, it takes for a telescope to move on from a visit, characterized by a pair of $(i_1,f_1)$, to the next visit $(i_2,f_2)$,  where, $i_1$ and $f_1$ are the current field and the current filter respectively, and $i_2$ and $f_2$ are the next field and the next filter respectively. In LSST problem, $\Delta t$ mainly depends on the slew time, mechanical settling time, the dome placement time, and finally the time it takes to change the filter from $f_1$ to $f_2$. All of these timings are available through a precise simulation of the LSST model \citep{delgado2014lsst}. For all possible $(i_1,f_1)$, and $(i_2,f_2)$ a modular design would be to bring the summation of the operational timings to the stage of the decision, instead of bringing them separately as different features. This approach makes the implementation significantly simpler, more readable, and easier to debug, and in a conceptual level, makes it possible to track the effect of the operational timing in the overall outcome of the decision maker. Particularly, since the operational cost is independent of the amount to which each cause contributes to the overall $\Delta t$, bringing the timing of the separate procedures separately in the decision making level adds unnecessary complications to the design, and consequently, makes it hard to back track the output-input behavior of the scheduler. 
+For designing the features, it is important to avoid redundancy and ensure the inclusion of determining information. It is also critical to hold a modular approach in the delivery of the information to the decision procedure. For instance, consider the amount of time, $\Delta t$, it takes for a telescope to move on from a visit, characterized by a pair of $(i_1,f_1)$, to the next visit $(i_2,f_2)$,  where, $i_1$ and $f_1$ are the current field and the current filter respectively, and $i_2$ and $f_2$ are the next field and the next filter respectively. In LSST problem, $\Delta t$ mainly depends on the slew time, mechanical settling time, the dome placement time, and finally the time it takes to change the filter from $f_1$ to $f_2$. All of these timings are available through a precise simulation of the LSST model \cite{delgado2014lsst}. For all possible $(i_1,f_1)$, and $(i_2,f_2)$ a modular design would be to bring the summation of the operational timings to the stage of the decision, instead of bringing them separately as different features. This approach makes the implementation significantly simpler, more readable, and easier to debug, and in a conceptual level, makes it possible to track the effect of the operational timing in the overall outcome of the decision maker. Particularly, since the operational cost is independent of the amount to which each cause contributes to the overall $\Delta t$, bringing the timing of the separate procedures separately in the decision making level adds unnecessary complications to the design, and consequently, makes it hard to back track the output-input behavior of the scheduler. 
 
 This section proposes seven features for the description of the LSST-environment state in Table (\ref{tab_features}). They are designed to efficiently carry the determining information with a modular approach. Each feature is denoted by $f_k(i,f,t)$ for $k= 1..7$, and indexed by the triplet of $(i,f,t)$, field, filter, and time. To make a decision at $t$, the scheduler computes all of the seven features for all of the $(i,f)$ pairs in general, however, there are some features that don't change in every time step, for instance, if $i$ is not visited at $t^j$, then $f_5(i,f,t^j)= f_5(i,f,t^{j+1})$. For such cases, the implementation has a categorized updating procedure to avoid extra computations.
 
@@ -643,7 +645,7 @@ $e$DE is a population-based metaheuristic algorithm, and for the result shown in
 
 \section{Performance of a Modified Feature-Based scheduler for LSST}\label{sec_comp}
 
-In this section, the LSST Metric Analysis Framework \citep{jones2014lsst} is used, to compare \footnote{The sky background models and weather downtime used to benchmark the algorithms are not exactly identical because of the practical difficulties in the separation of the environment and the scheduler in the \textit{astro-lsst-01-2013}'s implementation. However, for the purpose of the comparisons in this paper, the behavior of our sky and observatory model is sufficiently close to the official model.} the performance of a modified version of the Feature-Based scheduler with \textit{astro-lsst-01-2013}, the most recent official schedule of the LSST, over a 10-year period of scheduling simulations.
+In this section, the LSST Metric Analysis Framework \cite{jones2014lsst} is used, to compare \footnote{The sky background models and weather downtime used to benchmark the algorithms are not exactly identical because of the practical difficulties in the separation of the environment and the scheduler in the \textit{astro-lsst-01-2013}'s implementation. However, for the purpose of the comparisons in this paper, the behavior of our sky and observatory model is sufficiently close to the official model.} the performance of a modified version of the Feature-Based scheduler with \textit{astro-lsst-01-2013}, the most recent official schedule of the LSST, over a 10-year period of scheduling simulations.
 
 The Modified Feature-Based scheduler is under active development\footnote{GitHub repository: \url{https://github.com/lsst/sims_featureScheduler}.}, and addresses the observational details of the LSST's mission through the adjustment of the constraints and the basis functions. It is designed to produce a software that can be used in practice. In this version, we adopt a finer discretization of the sky using high resolution HEALpixel maps and do not require the partitions to be necessarily sized based on the telescope's field of view. The fact that the policy is not computationally expensive to evaluate makes it possible to use finer discretization of the state space. This approach allows the scheduler to handle the field's overlaps that cause inhomogeneity in the coverage of the sky. In addition to adopt a finer discretization, we use a spatial dithering scheme to randomize the final pointing of the telescope by a small amount around the center of the partitions, to further assist the homogeneity of the coverage. Moreover, the Modified Feature-Based scheduler uses a separate process tracking if an observation will need to be observed in a pair, and a separate processes deciding if a deep drilling sequence should be executed.
 
@@ -661,12 +663,17 @@ The Modified Feature-Based scheduler is under active development\footnote{GitHub
  
 For a survey telescope, such as LSST, the density of the co-added depth over the visible sky has to be ideally uniform in each filter and within each of the five survey regions. Figure~\ref{fig_10yrs_skymap} compares the values of the co-added depth on a (finely) discretized sky map after a 10-year period of scheduling simulation. Figure \ref{fig_zoomin_g}, compares the smoothness of the co-added depth coverage in a smaller scale for each scheduler in the \textit{g} band as an example, however the granular coverage pattern of \textit{astro-lsst-01-2013}, and smooth coverage of the Modified Feature-Based scheduler is similar for all of the filters. Smoother coverage that the Modified Feature-Based scheduler offers is due to the fine discretization of the sky, hence the state-space of the Markovian model, and the dithering scheme. 
 
-Figure~\ref{fig_10yrs_hist} and Table \ref{table_10yrs_hist} compare the distribution of the co-added depth on a (finely) discretized sky. The Modified feature-Based scheduler has paved the left-most peak that appears in the distribution of \textit{astro-lsst-01-2013}. This peak is the result of the field's overlaps that receive more number of visits than it's assumed in the decision making procedure of the scheduling. The default sky tessellation adopted by LSST results in 23\% of the sky being covered by more than one field. Adopting the dithering scheme, the median number of observations at a typical point in the sky increases by $\sim15$\%. Dithering is also essential for removing systematic effects for science cases such as measuring galaxy counts \citep{Awan2016}.
+Figure~\ref{fig_10yrs_hist} and Table \ref{table_10yrs_hist} compare the distribution of the co-added depth on a (finely) discretized sky. The Modified feature-Based scheduler has paved the left-most peak that appears in the distribution of \textit{astro-lsst-01-2013}. This peak is the result of the field's overlaps that receive more number of visits than it's assumed in the decision making procedure of the scheduling. The default sky tessellation adopted by LSST results in 23\% of the sky being covered by more than one field. Adopting the dithering scheme, the median number of observations at a typical point in the sky increases by $\sim15$\%. Dithering is also essential for removing systematic effects for science cases such as measuring galaxy counts \cite{Awan2016}.
 
 
 
 \begin{figure}[h!]
-\plottwo{Figures/OpSim10yrs_skymap.pdf}{Figures/FB10yrs_skymap.pdf}
+\begin{center}$
+\begin{array}{ll}
+\includegraphics[width = 0.45\textwidth]{Figures/OpSim10yrs_skymap.pdf}&
+\includegraphics[width = 0.45\textwidth]{Figures/FB10yrs_skymap.pdf}\\
+\end{array}$
+\end{center}
 \caption{The final co-added depth coverage in each of the six filters $\{ u, g, r, i, z, y\}$. According to the mission's objective, the scheduler has to provide a uniform coverage of the visible sky within each region, and in each filter. The left panels show the \textit{astro-lsst-01-2013} simulation results while the Modified Feature-Based scheduler is on the right. Modified Feature-Based scheduler closely matches the footprint of the official survey, and because of its adjustability property, offers a systematic way to de-emphasize the regions, that in the mission definition, are decided to be de-emphasized, such as the galactic plane and south celestial pole.}
 \label{fig_10yrs_skymap}
 \end{figure}
@@ -689,6 +696,7 @@ Figure~\ref{fig_10yrs_hist} and Table \ref{table_10yrs_hist} compare the distrib
 \begin{table}\label{table_10yrs_hist}
 \caption{The median and variance of the co-added depth distribution on a finely discretized sky. Modified Feature-Based scheduler closely matches the footprint of the official survey, and in addition outperforms \textit{astro-lsst-01-2013} in terms of the uniformity of the coverage, with lower variances, specially in WFD and SCP regions.}
 \begin{center}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{l|cccc|cccc} \hline
 &\multicolumn{8}{c}{Median, Variance} \\ \hline
 &\multicolumn{4}{c|}{\textit{astro-lsst-01-2013}} &\multicolumn{4}{c}{Modified Feature-Based} \\
@@ -701,7 +709,7 @@ filter  & WFD & GP & SCP & NES & WFD & GP & SCP & NES\\
 \textit{z}& 25.73, 0.04& 24.62,0.17& 24.57, 0.21& 24.90, 0.14 & 25.87, 0.01 & 25.03, 0.9 & 24.81, 0.05 & 25.16, 0.10\\
 \textit{y}& 24.92, 0.04 & 23.81, 0.16 & 23.72, 0.21& - & 24.92, 0.02 & 24.01, 0.09 &23.88, 0.06 & -\\
 %all & 157.2, 1.37&151.4, 11.94& 150.6, 6.32&103.4, 11.1&157.4, 0.38 & 153.0, 2.12&151.9, 1.56& 104.0, 1.40\\
-\end{tabular}
+\end{tabular}}
 \end{center}
 \end{table}
 
@@ -710,7 +718,12 @@ filter  & WFD & GP & SCP & NES & WFD & GP & SCP & NES\\
 In addition to uniformity of the coverage, the LSST mission calls for pairs of visits within a valid time window at the same night. The main reason is to detect the transient objects such as asteroids. Since, the moving objects usually belong to the solar system, the pair constraint was initially imposed only on the WFD and NES regions. However, there are interesting solar system objects such as interstellar asteroids that can be observed in any direction of the sky, besides identification of the other varying objects, such as super novae, can benefit from a follow up visit, especially if the second visit is with a different filter. Thus in the Modified Feature-Based scheduler we made the pair constraint a universal constraint for all of the regions.The downside of this extension is the fact that it constrains the scheduler even more and the performance can be potentially less than it could be. Note that the structure of the Feature-Based scheduler, allows for extension or restriction of the constraints down to the individual field's level, with neither contradicting any of the Markovian framework assumptions, nor breaking the structure of the implementation. Figure~\ref{fig_10yrs_pair} demonstrates the distribution of the observations in pair (in the $g$, $r$, and $i$ filters) to the total number of the observations. For the regions that the pair constraint is applied, this ratio can be interpreted as the success rate of the scheduler to satisfy the pair constraint. Figure~\ref{fig_10yrs_pair_hist}, compares the distribution of the visits-in-pair ratio of the modified Feature-Based scheduler and \textit{astro-lsst-01-2013}. Note that the peak of the density for Figure~\ref{fig_10yrs_pair_hist} is closer to $1$, which means a larger area of the sky is covered by successful visits-in-pairs, however, the Modified Feature-Based scheduler offers a sharper concentration of the values that can be interpreted as a more homogenous visits-in-pair ratio. In other words, the Modified Feature-Based scheduler, sacrifices perfect visit-in-pair for a limited area of the sky to maintain a uniform ratio of visit-in-pair for a larger area of the sky.
 
 \begin{figure}[h!]
-\plottwo{Figures/OpSim10yrs_Pair_skymap.pdf}{Figures/FB10yrs_Pair_skymap.pdf}
+\begin{center}$
+\begin{array}{ll}
+\includegraphics[width = 0.45\textwidth]{Figures/OpSim10yrs_Pair_skymap.pdf}&
+\includegraphics[width = 0.45\textwidth]{Figures/FB10yrs_Pair_skymap.pdf}\\
+\end{array}$
+\end{center}
 \caption{The ratio of the visit-in-pairs (in the $g$, $r$, and $i$ filters) to the total number of the observations on the sky map. For the areas that the pair constraint is applied, the ratio is desired to be one. For Modified Feature-Based scheduler (right), the pair constraint is applied to all of the regions and for \textit{astro-lsst-01-2013} (left), it is applied to the WFD and NES regions only.}
 \label{fig_10yrs_pair}
 \end{figure}
@@ -725,9 +738,6 @@ In addition to uniformity of the coverage, the LSST mission calls for pairs of v
 
 For a ground-based instrument, airmass is one of the major obstacles for high-quality observation. Although zenith observations have the minimum airmass, off-zenith observations cannot be avoided, in which case, observations around the meridian provide high quality data and consequently more efficient operation of the telescope. Figure~\ref{fig_10yrs_AltAz} compares the number density of the visits on an altitude-azimuth sky map in each of the six filters $[u,g,r,i,z,y]$. Clearly in all of the filters, the modified Feature-Based scheduler schedules more visits around the desirable meridian zone. In addition, it offers a consistent concentration peak on the east wings, which is essential for a higher success rate for the visit-in-pair constraint. Because, if the first visit of the night occurs when the field is on the east side of the sky, it provides a longer time opportunity for the second visit of the same night. Note that adjustability of the Feature-Based scheduler allows for a significant change in the behavior, in this case a variant of the marching army cadence is incorporated to control the location of the visits through a basis function modification.
 
-Finally, present a general  Thus the 
-
-
 For a multi-mission, survey telescope, such as LSST, comparing the performance of the different schedules is a difficult task. Particularly because of the large number of the competing factors that are involved in the performance evaluation. In some cases involving the importance of each area of astronomy, the criteria are not even objective. We conclude this section with a general comparison by combining the surveys' open shutter fraction (OSF), and median airmass of the observations. The open shutter fraction is the total time that the telescope camera shutter was open divided by the total time it could have been open. This reveals how time-efficiently the observations have been scheduled. The median airmass reflects the overall quality of the collected data. Generally speaking, observations in lower airmass allows for a higher data quality. Figure~\ref{fig_all_alt_az} visualizes the number density of the visits on an altitude-azimuth sky map for the modified Feature-Based scheduler with the most recent LSST baseline schedules \textit{astro-lsst-01-2013} and \textit{minion\_1016}. Table~\ref{OSF_table}, shows that there is a trade-off between airmass and OSF. For instance \textit{minion\_1016}, offers the best OSF (time efficiency), while the median armass is the worst. (data quality). Meanwhile \textit{astro-lsst-01\_2013} offers low airmass abservations, resulting in a lower OSF. Moreover, in the $r$\ filter where atmospheric extinction is less relevant, \textit{minion\_1016} has a higher total throughput while \textit{astro-lsst-01\_2013} has higher throughput in the $g$\ filter. By including dithering, the modified Feature-Based scheduler vastly outperforms the other surveys in both the blue and red filters. The Modified Feature-Based simulation has the lowest OSF, but this is an initial simulation where the basis function weights have not been optimized, so there is potential for further improvements. Moreover using the Modified Feature-Based scheduler for observations in large blocks could improve the OSF as shown in D. Rothchild et al. (2018, in preparation).
 
 
@@ -736,18 +746,17 @@ For a multi-mission, survey telescope, such as LSST, comparing the performance o
 
 
 
-\begin{deluxetable}{lccccc}\label{OSF_table}
-\tablecaption{Comparison of three different survey algorithms in a section of the LSST Wide-Fast-Deep survey area.}
-\tablehead{
-\colhead{Survey} & \colhead{OSF} & \colhead{median Airmass} & \colhead{dithered} & \colhead{median throughput}\\
-  & &&& \colhead{$r$ (\%)} & \colhead{$g$ (\%)}
-  }
-\startdata
+\begin{table}\label{OSF_table}
+\caption{Comparison of three different survey algorithms in a section of the LSST Wide-Fast-Deep survey area.}
+\begin{tabular}{lccccc}\hline
+Survey& OSF & median Airmass & dithered & median throughput\\
+  & &&& $r$ (\%) & $g$ (\%)\\ \hline \hline
+
 Modified F-B & 0.705 & 1.1 & yes & 63.7 & 47.0 \\
 minion\_1016 & 0.736 & 1.2 & no & 55.3 & 40.0 \\
-astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
-\enddata
-\end{deluxetable}
+astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\ \hline
+\end{tabular}
+\end{table}
 
 
 
@@ -781,11 +790,13 @@ astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
 
 % Figures generated by https://github.com/yoachim/18_scratch/blob/master/bosf_values/BOSF_check.ipynb
 \begin{figure}
-\epsscale{0.35}
-\plotone{Figures/minion_1016_Observation_Density_HEAL_SkyMap.pdf}
-\plotone{Figures/astro-lsst-01_2013_Observation_Density_HEAL_SkyMap.pdf}
-\plotone{Figures/FB_Observation_Density_HEAL_SkyMap.pdf}
-\epsscale{1}
+\begin{center}$
+\begin{array}{rcl}
+\includegraphics[width = 0.29\textwidth]{Figures/minion_1016_Observation_Density_HEAL_SkyMap.pdf}
+\includegraphics[width = 0.29\textwidth]{Figures/astro-lsst-01_2013_Observation_Density_HEAL_SkyMap.pdf}
+\includegraphics[width = 0.29\textwidth]{Figures/FB_Observation_Density_HEAL_SkyMap.pdf}
+\end{array}$
+\end{center}
 \caption{The altitude azimuth visit distribution for three LSST simulations. On the left, the proposal based minion\_1016 simulation takes most observations at high airmass and very few on the meridian. In the middle, the astro-lsst-01\_2013 simulation takes many observations on the meridian, but still executes deep drilling fields and a smattering of other observations at high airmass. On the right, the feature based simulation concentrates observations, including deep drilling fields, while avoiding observing near zenith. }\label{fig_all_alt_az}
 \end{figure}
 
@@ -799,17 +810,17 @@ On the other hand, the decision elements in the Feature-Based scheduler are desi
 Furthermore, the required computational resources for the training/optimizing of the Feature-Based scheduler is versatile, depending on the purpose. If many different objective functions are being tested for planning a mission, then a quick $e$DE optimization for a short scheduling episode can find a sufficiently good scheduler for each mission or even a quick manual hand tuning that reflects the intuitive importance of each basis function is possible, because they carry an astronomical observation meaning. On the other hand if the objective is known and fixed, and the scheduler is being trained for real-time decision making, then one might even categorize the observation nights based on their main differences, such as the moon-phase and train a scheduler specifically for each category. 
 
 
-\acknowledgments
+%\acknowledgments
 \textbf{Acknowledgments.} We would like to thank the LSST corporation's leadership for the financial support of this work, and the DIRAC Institute's faculty and researchers for providing expertise, without which this research would not have been possible. In particular, Professor \v{Z}eljko Ivezi\'{c} whose consistent attention and insightful comments greatly assisted this work. We would also like to show our gratitude to the LSST experts in other institutes, specially Professor Michael Strauss, Professor Christopher Stubbs, Dr. Robert Lupton, and Michael Reuter for their insightful comments spanning from the idea stage to the end of this project.
 
 %\facility{LSST}
 
-%\software{MAF \citep{jones2014lsst}, healpy \citep{Healpy05}, matplotlib \citep{matplotlib07}, 
-%          astropy \citep{astropy18}, XXX-numpy/scipy}
+%\software{MAF \cite{jones2014lsst}, healpy \cite{Healpy05}, matplotlib \cite{matplotlib07}, 
+%          astropy \cite{astropy18}, XXX-numpy/scipy}
 
 %\bibliographystyle{unsrt}
-%\bibliography{/Users/elahesadatnaghib/Dropbox/Graduate/Research/Princeton/Publications/references}
-\bibliography{references}
+\bibliography{/Users/enaghib/Dropbox/Graduate/Research/Princeton/Publications/references}
+%\bibliography{references}
 \end{document}
 
 
