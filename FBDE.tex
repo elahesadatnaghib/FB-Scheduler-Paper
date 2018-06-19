@@ -542,7 +542,7 @@ Figure \ref{fig_10yrs_hist} and Table \ref{table_10yrs_hist} compare the distrib
 \plotone{Figures/dithered_zoomed3.pdf}
 \plotone{Figures/fb_zoomed3.pdf}
 \epsscale{1}
-\caption{Smoothness of the co-added depth coverage in a smaller-scale, in the \textit{r} band. The smooth coverage of the Modified Feature-Based scheduler (right) versus the granular pattern of \textit{astro-lsst-01-2013} (left), further satisfies the uniformity of the coverage which is one of the most fundamental objectives of the LSST mission. The middle figure is the coverage of \textit{astro-lsst-01-2013}, with dithering of the same sequence which fundamentally can not become as smooth as the right figure, because unlike Feature-Based scheduler, the scheme of \textit{astro-lsst-01-2013} does not allow for dacision making with arbitrary discretization of the sky}\label{fig_zoomin_r}
+\caption{Smoothness of the co-added depth coverage in a smaller-scale, in the \textit{r} band. The smooth coverage of the Modified Feature-Based scheduler (right) versus the granular pattern of \textit{astro-lsst-01-2013} (left), further satisfies the uniformity of the coverage which is one of the most fundamental objectives of the LSST mission. The middle figure is the coverage of \textit{astro-lsst-01-2013}, with dithering of the same sequence which fundamentally can not become as smooth as the right figure, because unlike Feature-Based scheduler, the scheme of \textit{astro-lsst-01-2013} does not easily allow for decision making with arbitrary discretization of the sky.}\label{fig_zoomin_r}
 \end{figure}
 
 
@@ -588,7 +588,7 @@ In addition to uniformity of the coverage, the LSST mission calls for pairs of v
 \begin{figure}[h!]
 \centering
 \includegraphics[width=.4\linewidth]{Figures/PairHist.pdf}
-\caption{Distribution of the visits-in-pair ratio to the total number of the observations, in any of the \textit{g}, \textit{r}, and \textit{i} filters. The Feature-Based scheduler in compare with \textit{astro-lsst-01-2013}, sacrifices perfect visit-in-pair for a limited area of the visible sky (with a lower mean) to maintain a uniform ratio of visit-in-pair for a larger area of the sky (with a sharper distribution)}
+\caption{Distribution of the visits-in-pair ratio to the total number of the observations, in any of the \textit{g}, \textit{r}, and \textit{i} filters. The Feature-Based scheduler in compare with \textit{astro-lsst-01-2013}, sacrifices perfect visit-in-pair for a limited area of the visible sky (with a lower mean) to maintain a uniform ratio of visit-in-pair for a larger area of the sky (with a sharper distribution).}
 \label{fig_10yrs_pair_hist}
 \end{figure}
 
@@ -639,7 +639,7 @@ astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
 
 
 
-\caption{Each plot is the distribution of the number of the visits on an altitude-azimuth sky map in one of the six filters. The two left columns belong to \textit{astro-lsst-01-2013}, and the two right columns belong to a simulation of the Modified Feature-Based scheduler. The higher concentration on the meridian (vertical axis) for the Modified feature-Based scheduler shows a more desirable behavior. Moreover, consistent concentration of the visits on the east wing can potentially provide a better visit-in-pair behavior}
+\caption{Each plot is the distribution of the visits on an altitude-azimuth sky map in one of the six filters. The two left columns belong to \textit{astro-lsst-01-2013}, and the two right columns belong to a simulation of the Modified Feature-Based scheduler. The higher concentration on the meridian (vertical axis) for the Modified feature-Based scheduler shows a more desirable behavior. Moreover, consistent concentration of the visits on the east wing can potentially provide a better visit-in-pair behavior}
 \label{fig_10yrs_AltAz}
 \end{figure}
 
@@ -651,7 +651,7 @@ astro-lsst-01\_2013 & 0.715 & 1.1 & no & 54.4 & 40.8 \\
 \plotone{Figures/astro-lsst-01_2013_Observation_Density_HEAL_SkyMap.pdf}
 \plotone{Figures/FB_Observation_Density_HEAL_SkyMap.pdf}
 \epsscale{1}
-\caption{The distribution of the number of the visits on an altitude-azimuth sky map for three schedulers. On the left, the minion\_1016 simulation schedules most observations at high airmass and very few on the meridian. In the middle, the astro-lsst-01\_2013 simulation schedules many observations on the meridian, but still executes deep drilling fields and a smattering of other observations at high airmass. On the right, the Modified Feature-Based scheduler concentrates observations around the meridian, including deep drilling observation. }\label{fig_all_alt_az}
+\caption{The distribution of the visits on an altitude-azimuth sky map for three schedulers. On the left, the minion\_1016 simulation schedules most observations at high airmass and very few on the meridian. In the middle, the astro-lsst-01\_2013 simulation schedules many observations on the meridian, but still executes deep drilling fields and a smattering of other observations at high airmass. On the right, the Modified Feature-Based scheduler concentrates observations around the meridian, including deep drilling observation. }\label{fig_all_alt_az}
 \end{figure}
 
 \section{Concluding remarks}\label{sec_conclusion}
