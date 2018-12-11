@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 DEC 2018 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 DEC 2018 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -927,14 +927,17 @@ LaTeX Font Info:    Try loading font information for U+dsrom on input line 344.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [11]
-[12] <Theta1.pdf, id=13766, 722.7pt x 325.215pt>
+)
+Overfull \vbox (2.68695pt too high) has occurred while \output is active []
+
+
+[11] [12] <Theta1.pdf, id=13767, 722.7pt x 325.215pt>
 File: Theta1.pdf Graphic file (type pdf)
  <use Theta1.pdf>
 Package pdftex.def Info: Theta1.pdf used on input line 372.
 (pdftex.def)             Requested size: 227.62204pt x 102.42838pt.
 
-<Theta2.pdf, id=13767, 722.7pt x 325.215pt>
+<Theta2.pdf, id=13768, 722.7pt x 325.215pt>
 File: Theta2.pdf Graphic file (type pdf)
  <use Theta2.pdf>
 Package pdftex.def Info: Theta2.pdf used on input line 373.
@@ -944,13 +947,13 @@ Overfull \hbox (12.00003pt too wide) in paragraph at lines 370--375
  [][]$ 
  []
 
-<Theta3.pdf, id=13768, 722.7pt x 325.215pt>
+<Theta3.pdf, id=13769, 722.7pt x 325.215pt>
 File: Theta3.pdf Graphic file (type pdf)
  <use Theta3.pdf>
 Package pdftex.def Info: Theta3.pdf used on input line 379.
 (pdftex.def)             Requested size: 227.62204pt x 102.42838pt.
 
-<Theta4.pdf, id=13769, 722.7pt x 325.215pt>
+<Theta4.pdf, id=13770, 722.7pt x 325.215pt>
 File: Theta4.pdf Graphic file (type pdf)
  <use Theta4.pdf>
 Package pdftex.def Info: Theta4.pdf used on input line 380.
@@ -960,7 +963,7 @@ Overfull \hbox (12.00003pt too wide) in paragraph at lines 377--382
  [][]$ 
  []
 
-<Theta5.pdf, id=13770, 722.7pt x 325.215pt>
+<Theta5.pdf, id=13771, 722.7pt x 325.215pt>
 File: Theta5.pdf Graphic file (type pdf)
  <use Theta5.pdf>
 Package pdftex.def Info: Theta5.pdf used on input line 386.
@@ -997,21 +1000,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--433
 
  []
 
-[14] <TDcurve.pdf, id=13980, 435.42674pt x 356.83313pt>
+[14] <TDcurve.pdf, id=13984, 435.42674pt x 356.83313pt>
 File: TDcurve.pdf Graphic file (type pdf)
  <use TDcurve.pdf>
 Package pdftex.def Info: TDcurve.pdf used on input line 448.
 (pdftex.def)             Requested size: 227.62204pt x 186.53435pt.
 
 [15 <./TDcurve.pdf>]
-<eDEObjectiveFunction.pdf, id=14046, 470.65837pt x 315.27788pt>
+<eDEObjectiveFunction.pdf, id=14048, 470.65837pt x 315.27788pt>
 File: eDEObjectiveFunction.pdf Graphic file (type pdf)
 
 <use eDEObjectiveFunction.pdf>
 Package pdftex.def Info: eDEObjectiveFunction.pdf used on input line 468.
 (pdftex.def)             Requested size: 227.62204pt x 152.4718pt.
  [16 <./eDEObjectiveFunction.pdf>]
-Overfull \vbox (21.54219pt too high) has occurred while \output is active []
+Overfull \vbox (1.69217pt too high) has occurred while \output is active []
 
 
 [17] <OpSim10yrs_skymap.pdf, id=14119, 474.3133pt x 549.03912pt>
@@ -1073,20 +1076,20 @@ sion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Co_addedHist10yrs.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] <OpSim10yrs_Pair_skymap.pdf, id=14360, 614.295pt x 390.25798pt>
+>] <OpSim10yrs_Pair_skymap.pdf, id=14359, 614.295pt x 390.25798pt>
 File: OpSim10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use OpSim10yrs_Pair_skymap.pdf>
 Package pdftex.def Info: OpSim10yrs_Pair_skymap.pdf used on input line 550.
 (pdftex.def)             Requested size: 193.48012pt x 122.91405pt.
 
-<FB10yrs_Pair_skymap.pdf, id=14361, 614.295pt x 390.25798pt>
+<FB10yrs_Pair_skymap.pdf, id=14360, 614.295pt x 390.25798pt>
 File: FB10yrs_Pair_skymap.pdf Graphic file (type pdf)
 
 <use FB10yrs_Pair_skymap.pdf>
 Package pdftex.def Info: FB10yrs_Pair_skymap.pdf used on input line 550.
 (pdftex.def)             Requested size: 193.48012pt x 122.91405pt.
- <PairHist.pdf, id=14362, 433.62pt x 289.08pt>
+ <PairHist.pdf, id=14361, 433.62pt x 289.08pt>
 File: PairHist.pdf Graphic file (type pdf)
 
 <use PairHist.pdf>
@@ -1096,11 +1099,12 @@ Package pdftex.def Info: PairHist.pdf used on input line 557.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[20 <./OpSim10yrs_Pair_skymap.pdf> <./FB10yrs_Pair_skymap.pdf
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<opsim_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf, id=14365, 452.47797pt x
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FB10yrs_Pair_skymap.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<opsim_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf, id=14429, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1109,7 +1113,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf
 used on input line 568.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<opsim_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf, id=14366, 452.47797pt x
+<opsim_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf, id=14430, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1118,7 +1122,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf
 used on input line 569.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf, id=14367, 452.47797pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf, id=14431, 452.47797pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1127,7 +1131,7 @@ Package pdftex.def Info: FB_Nvisits_as_function_of_Alt_Az_u_HEAL_SkyMap.pdf use
 d on input line 570.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf, id=14368, 452.47797pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf, id=14432, 452.47797pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1136,7 +1140,7 @@ Package pdftex.def Info: FB_Nvisits_as_function_of_Alt_Az_g_HEAL_SkyMap.pdf use
 d on input line 571.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<opsim_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf, id=14369, 452.47797pt x
+<opsim_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf, id=14433, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1145,7 +1149,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf
 used on input line 572.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<opsim_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf, id=14370, 452.47797pt x
+<opsim_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf, id=14434, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1154,7 +1158,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf
 used on input line 573.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf, id=14371, 452.47797pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf, id=14435, 452.47797pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1163,7 +1167,7 @@ Package pdftex.def Info: FB_Nvisits_as_function_of_Alt_Az_r_HEAL_SkyMap.pdf use
 d on input line 574.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf, id=14372, 452.47797pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf, id=14436, 452.47797pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1172,7 +1176,7 @@ Package pdftex.def Info: FB_Nvisits_as_function_of_Alt_Az_i_HEAL_SkyMap.pdf use
 d on input line 575.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<opsim_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf, id=14373, 452.47797pt x
+<opsim_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf, id=14437, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1181,7 +1185,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf
 used on input line 576.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<opsim_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf, id=14374, 452.47797pt x
+<opsim_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf, id=14438, 452.47797pt x
  407.92062pt>
 File: opsim_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf Graphic file (type 
 pdf)
@@ -1190,7 +1194,7 @@ Package pdftex.def Info: opsim_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf
 used on input line 577.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf, id=14375, 452.47797pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf, id=14439, 452.47797pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1199,7 +1203,7 @@ Package pdftex.def Info: FB_Nvisits_as_function_of_Alt_Az_z_HEAL_SkyMap.pdf use
 d on input line 578.
 (pdftex.def)             Requested size: 113.81102pt x 102.60233pt.
 
-<FB_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf, id=14376, 460.14723pt x 40
+<FB_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf, id=14440, 460.14723pt x 40
 7.92062pt>
 File: FB_Nvisits_as_function_of_Alt_Az_y_HEAL_SkyMap.pdf Graphic file (type pdf
 )
@@ -1212,19 +1216,10 @@ Overfull \hbox (36.00006pt too wide) in paragraph at lines 566--581
  [][]$ 
  []
 
-[20]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./OpSim10yrs_Pair_skymap.pdf> <./FB10yrs_Pair_skymap.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FB10yrs_Pair_skymap.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./PairHist.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./PairHist.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->]
+[21 <./PairHist.pdf>]
 <minion_1016_Observation_Density_HEAL_SkyMap.pdf, id=14491, 316.60358pt x 273.6
 116pt>
 File: minion_1016_Observation_Density_HEAL_SkyMap.pdf Graphic file (type pdf)
@@ -1323,13 +1318,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 718.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 718.
  ) 
 Here is how much of TeX's memory you used:
- 10745 strings out of 493089
- 151283 string characters out of 6134842
- 311285 words of memory out of 5000000
- 13865 multiletter control sequences out of 15000+600000
+ 10744 strings out of 493089
+ 151274 string characters out of 6134842
+ 305859 words of memory out of 5000000
+ 13864 multiletter control sequences out of 15000+600000
  21651 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,23n,37p,2666b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,23n,37p,2690b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
@@ -1359,7 +1354,7 @@ t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist
 onts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/doublestroke/dsrom10.pfb>
-Output written on FBDE.pdf (27 pages, 17295863 bytes).
+Output written on FBDE.pdf (27 pages, 17296021 bytes).
 PDF statistics:
  15259 PDF objects out of 15390 (max. 8388607)
  7485 compressed objects within 75 object streams
