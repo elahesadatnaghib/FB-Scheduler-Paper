@@ -1,0 +1,266 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{{Alexander} {et~al.}(2017){Alexander}, {Berger}, {Bower}, {Casewell},
+  {Cenko}, {Chatterjee}, {Cleeves}, {Cordes}, {Drake}, {Drout}, {Dupuy},
+  {Eftekhari}, {Fazio}, {Fong}, {Guillochon}, {Gurwell}, {Johnson}, {Kaminski},
+  {Kong}, {Laskar}, {Law}, {Littlefair}, {MacGregor}, {Maksym}, {Matthews},
+  {McCollough}, {Milam}, {Moullet}, {Nicholl}, {Rizzuto}, {Rothberg},
+  {Seymour}, {Villard}, {Wilkes}, {Williams}, {Willner}, \&
+  {Yusuf-Zadeh}}]{alexander2017enabling}
+{Alexander}, K.~D., {Berger}, E., {Bower}, G., {et~al.} 2017, ArXiv e-prints.
+\newblock \doarXiv{1703.04692}
+
+\bibitem[{{Awan} {et~al.}(2016){Awan}, {Gawiser}, {Kurczynski}, {Jones},
+  {Zhan}, {Padilla}, {Mu{\~n}oz Arancibia}, {Orsi}, {Cora}, \&
+  {Yoachim}}]{Awan2016}
+{Awan}, H., {Gawiser}, E., {Kurczynski}, P., {et~al.} 2016, \apj, 829, 50,
+  \dodoi{10.3847/0004-637X/829/1/50}
+
+\bibitem[{{Bellm}(2014)}]{Bellm14}
+{Bellm}, E. 2014, in The Third Hot-wiring the Transient Universe Workshop, ed.
+  P.~R. {Wozniak}, M.~J. {Graham}, A.~A. {Mahabal}, \& R.~{Seaman}, 27--33
+
+\bibitem[{{Boroson} {et~al.}(2014){Boroson}, {Brown}, {Hjelstrom}, {Howell},
+  {Lister}, {Pickles}, {Rosing}, {Saunders}, {Street}, \& {Walker}}]{Boroson14}
+{Boroson}, T., {Brown}, T., {Hjelstrom}, A., {et~al.} 2014, in \procspie, Vol.
+  9149, Observatory Operations: Strategies, Processes, and Systems V, 91491E
+
+\bibitem[{{Brink} {et~al.}(2008){Brink}, {Charles}, {Hettlage}, {Husser},
+  {Koeslag}, \& {Romero-Colmenero}}]{brink2008salt}
+{Brink}, J., {Charles}, A., {Hettlage}, C., {et~al.} 2008, in \procspie, Vol.
+  7019, Advanced Software and Control for Astronomy II, 70190N
+
+\bibitem[{{Connolly} {et~al.}(2014){Connolly}, {Angeli}, {Chandrasekharan},
+  {Claver}, {Cook}, {Ivezic}, {Jones}, {Krughoff}, {Peng}, {Peterson}, {Petry},
+  {Rasmussen}, {Ridgway}, {Saha}, {Sembroski}, {vanderPlas}, \&
+  {Yoachim}}]{2014SPIE.9150E..14C}
+{Connolly}, A.~J., {Angeli}, G.~Z., {Chandrasekharan}, S., {et~al.} 2014, in
+  Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series,
+  Vol. 9150, Modeling, Systems Engineering, and Project Management for
+  Astronomy VI, ed. G.~Z. Angeli \& P.~Dierickx, 14
+
+\bibitem[{Delgado \& Reuter(2016)}]{delgado2016lsst}
+Delgado, F., \& Reuter, M.~A. 2016, in SPIE Astronomical Telescopes+
+  Instrumentation, International Society for Optics and Photonics,
+  991019--991019
+
+\bibitem[{{Delgado} \& {Reuter}(2016)}]{2016SPIE.9910E..13D}
+{Delgado}, F., \& {Reuter}, M.~A. 2016, in \procspie, Vol. 9910, Observatory
+  Operations: Strategies, Processes, and Systems VI, 991013
+
+\bibitem[{{Delgado} {et~al.}(2014){Delgado}, {Saha}, {Chandrasekharan}, {Cook},
+  {Petry}, \& {Ridgway}}]{delgado2014lsst}
+{Delgado}, F., {Saha}, A., {Chandrasekharan}, S., {et~al.} 2014, in \procspie,
+  Vol. 9150, Modeling, Systems Engineering, and Project Management for
+  Astronomy VI, 915015
+
+\bibitem[{Garcia-Piquer {et~al.}(2015)Garcia-Piquer, Ribas, \&
+  Colom{\'e}}]{garcia2015artificial}
+Garcia-Piquer, A., Ribas, I., \& Colom{\'e}, J. 2015, Experimental Astronomy,
+  40, 671
+
+\bibitem[{{G{\'o}rski} {et~al.}(2005){G{\'o}rski}, {Hivon}, {Banday},
+  {Wandelt}, {Hansen}, {Reinecke}, \& {Bartelmann}}]{Healpy05}
+{G{\'o}rski}, K.~M., {Hivon}, E., {Banday}, A.~J., {et~al.} 2005, \apj, 622,
+  759, \dodoi{10.1086/427976}
+
+\bibitem[{{Graham} {et~al.}(2018){Graham}, {Connolly}, {Ivezi{\'c}}, {Schmidt},
+  {Jones}, {Juri{\'c}}, {Daniel}, \& {Yoachim}}]{2018AJ.155..1G}
+{Graham}, M.~L., {Connolly}, A.~J., {Ivezi{\'c}}, {\v Z}., {et~al.} 2018, \aj,
+  155, 1, \dodoi{10.3847/1538-3881/aa99d4}
+
+\bibitem[{{Grav} {et~al.}(2016){Grav}, {Mainzer}, \&
+  {Spahr}}]{2016AJ.151..172G}
+{Grav}, T., {Mainzer}, A.~K., \& {Spahr}, T. 2016, \aj, 151, 172,
+  \dodoi{10.3847/0004-6256/151/6/172}
+
+\bibitem[{{Gressler} {et~al.}(2014){Gressler}, {DeVries}, {Hileman}, {Neill},
+  {Sebag}, {Wiecha}, {Andrew}, {Lotz}, \& {Schoening}}]{2014SPIE.9145E..1AG}
+{Gressler}, W., {DeVries}, J., {Hileman}, E., {et~al.} 2014, in Society of
+  Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 9145,
+  Ground-based and Airborne Telescopes V, ed. L.~M. Stepp, R.~Gilmozzi, \&
+  H.~J. Hall, 1
+
+\bibitem[{Gurobi~Optimization(2016)}]{gurobi}
+Gurobi~Optimization, I. 2016, Gurobi Optimizer Reference Manual.
+\newblock \url{http://www.gurobi.com}
+
+\bibitem[{Górski {et~al.}(2005)Górski, Hivon, Banday, Wandelt, Hansen,
+  Reinecke, \& Bartelmann}]{gorski2005healpix}
+Górski, K.~M., Hivon, E., Banday, A.~J., {et~al.} 2005, The Astrophysical
+  Journal, 622, 759
+
+\bibitem[{Hunter(2007)}]{matplotlib07}
+Hunter, J.~D. 2007, Computing In Science \& Engineering, 9, 90,
+  \dodoi{10.1109/MCSE.2007.55}
+
+\bibitem[{{Ivezic} {et~al.}(2008){Ivezic}, {Tyson}, {Abel}, {Acosta},
+  {Allsman}, {AlSayyad}, {Anderson}, {Andrew}, {Angel}, {Angeli}, {Ansari},
+  {Antilogus}, {Arndt}, {Astier}, {Aubourg}, {Axelrod}, {Bard}, {Barr},
+  {Barrau}, {Bartlett}, {Bauman}, {Beaumont}, {Becker}, {Becla}, {Beldica},
+  {Bellavia}, {Blanc}, {Blandford}, {Bloom}, {Bogart}, {Borne}, {Bosch},
+  {Boutigny}, {Brandt}, {Brown}, {Bullock}, {Burchat}, {Burke}, {Cagnoli},
+  {Calabrese}, {Chandrasekharan}, {Chesley}, {Cheu}, {Chiang}, {Claver},
+  {Connolly}, {Cook}, {Cooray}, {Covey}, {Cribbs}, {Cui}, {Cutri}, {Daubard},
+  {Daues}, {Delgado}, {Digel}, {Doherty}, {Dubois}, {Dubois-Felsmann},
+  {Durech}, {Eracleous}, {Ferguson}, {Frank}, {Freemon}, {Gangler}, {Gawiser},
+  {Geary}, {Gee}, {Geha}, {Gibson}, {Gilmore}, {Glanzman}, {Goodenow},
+  {Gressler}, {Gris}, {Guyonnet}, {Hascall}, {Haupt}, {Hernandez}, {Hogan},
+  {Huang}, {Huffer}, {Innes}, {Jacoby}, {Jain}, {Jee}, {Jernigan},
+  {Jevremovic}, {Johns}, {Jones}, {Juramy-Gilles}, {Juric}, {Kahn}, {Kalirai},
+  {Kallivayalil}, {Kalmbach}, {Kantor}, {Kasliwal}, {Kessler}, {Kirkby},
+  {Knox}, {Kotov}, {Krabbendam}, {Krughoff}, {Kubanek}, {Kuczewski},
+  {Kulkarni}, {Lambert}, {Le Guillou}, {Levine}, {Liang}, {Lim}, {Lintott},
+  {Lupton}, {Mahabal}, {Marshall}, {Marshall}, {May}, {McKercher}, {Migliore},
+  {Miller}, {Mills}, {Monet}, {Moniez}, {Neill}, {Nief}, {Nomerotski},
+  {Nordby}, {O'Connor}, {Oliver}, {Olivier}, {Olsen}, {Ortiz}, {Owen}, {Pain},
+  {Peterson}, {Petry}, {Pierfederici}, {Pietrowicz}, {Pike}, {Pinto}, {Plante},
+  {Plate}, {Price}, {Prouza}, {Radeka}, {Rajagopal}, {Rasmussen}, {Regnault},
+  {Ridgway}, {Ritz}, {Rosing}, {Roucelle}, {Rumore}, {Russo}, {Saha},
+  {Sassolas}, {Schalk}, {Schindler}, {Schneider}, {Schumacher}, {Sebag},
+  {Sembroski}, {Seppala}, {Shipsey}, {Silvestri}, {Smith}, {Smith}, {Strauss},
+  {Stubbs}, {Sweeney}, {Szalay}, {Takacs}, {Thaler}, {Van Berg}, {Vanden Berk},
+  {Vetter}, {Virieux}, {Xin}, {Walkowicz}, {Walter}, {Wang}, {Warner},
+  {Willman}, {Wittman}, {Wolff}, {Wood-Vasey}, {Yoachim}, {Zhan}, \& {for the
+  LSST Collaboration}}]{ivezic2008large}
+{Ivezic}, Z., {Tyson}, J.~A., {Abel}, B., {et~al.} 2008, ArXiv e-prints.
+\newblock \doarXiv{0805.2366}
+
+\bibitem[{{Jacklin} {et~al.}(2017){Jacklin}, {Lund}, {Pepper}, \&
+  {Stassun}}]{2017AJ.153..186J}
+{Jacklin}, S.~R., {Lund}, M.~B., {Pepper}, J., \& {Stassun}, K.~G. 2017, \aj,
+  153, 186, \dodoi{10.3847/1538-3881/aa64d1}
+
+\bibitem[{Johnston \& Miller(1994)}]{johnston1994spike}
+Johnston, M.~D., \& Miller, G. 1994, Intelligent Scheduling, 391
+
+\bibitem[{Jones {et~al.}(2001)Jones, Oliphant, Peterson, {et~al.}}]{scipy}
+Jones, E., Oliphant, T., Peterson, P., {et~al.} 2001, {SciPy}: Open source
+  scientific tools for {Python}.
+\newblock \url{http://www.scipy.org/}
+
+\bibitem[{Jones {et~al.}(2014)Jones, Yoachim, Chandrasekharan, Connolly, Cook,
+  Ivezic, Krughoff, Petry, \& Ridgway}]{jones2014lsst}
+Jones, R.~L., Yoachim, P., Chandrasekharan, S., {et~al.} 2014, in SPIE
+  Astronomical Telescopes+ Instrumentation, International Society for Optics
+  and Photonics, 91490B--91490B
+
+\bibitem[{{Lampoudi} {et~al.}(2015){Lampoudi}, {Saunders}, \&
+  {Eastman}}]{Lampoudi15}
+{Lampoudi}, S., {Saunders}, E., \& {Eastman}, J. 2015, ArXiv e-prints.
+\newblock \doarXiv{1503.07170}
+
+\bibitem[{Muscettola {et~al.}(1995)Muscettola, Pell, Hansson, \&
+  Mohan}]{muscettola1995automating}
+Muscettola, N., Pell, B., Hansson, O., \& Mohan, S. 1995, in Robotic
+  Telescopes. Current Capabilities, Present Developments, and Future Prospects
+  for Automated Astronomy, Vol.~79, 148
+
+\bibitem[{Naghib \& Nobakhti(2016)}]{naghib2016entropic}
+Naghib, E., \& Nobakhti, A. 2016, in American Control Conference (ACC), 2016,
+  IEEE, 2440--2446
+
+\bibitem[{{Naghib} {et~al.}(2016){Naghib}, {Vanderbei}, \&
+  {Stubbs}}]{naghib2016feature}
+{Naghib}, E., {Vanderbei}, R.~J., \& {Stubbs}, C. 2016, in \procspie, Vol.
+  9910, Observatory Operations: Strategies, Processes, and Systems VI, 991011
+
+\bibitem[{Nelson {et~al.}(1985)Nelson, Mast, \& Faber}]{nelson1985design}
+Nelson, J.~E., Mast, T.~S., \& Faber, S.~M. 1985
+
+\bibitem[{Nowakovski {et~al.}(1999)Nowakovski, Schw{\"a}rzler, \&
+  Triesch}]{nowakovski1999using}
+Nowakovski, J., Schw{\"a}rzler, W., \& Triesch, E. 1999, European Journal of
+  Operational Research, 112, 531
+
+\bibitem[{{Oluseyi} {et~al.}(2012){Oluseyi}, {Becker}, {Culliton}, {Furqan},
+  {Hoadley}, {Regencia}, {Wells}, {Ivezic}, {Jones}, {Krughoff}, {Sesar},
+  {Jacoby}, \& {Allison}}]{2012AJ.144..9O}
+{Oluseyi}, H.~M., {Becker}, A.~C., {Culliton}, C., {et~al.} 2012, \aj, 144, 9,
+  \dodoi{10.1088/0004-6256/144/1/9}
+
+\bibitem[{{Reuter} {et~al.}(2016){Reuter}, {Cook}, {Delgado}, {Petry}, \&
+  {Ridgway}}]{2016SPIE.9911E..25R}
+{Reuter}, M.~A., {Cook}, K.~H., {Delgado}, F., {Petry}, C.~E., \& {Ridgway},
+  S.~T. 2016, in \procspie, Vol. 9911, Modeling, Systems Engineering, and
+  Project Management for Astronomy VI, 991125
+
+\bibitem[{{Saunders} \& {Lampoudi}(2014)}]{Saunders14}
+{Saunders}, E., \& {Lampoudi}, S. 2014, in The Third Hot-wiring the Transient
+  Universe Workshop, ed. P.~R. {Wozniak}, M.~J. {Graham}, A.~A. {Mahabal}, \&
+  R.~{Seaman}, 117--123
+
+\bibitem[{{Sebag} {et~al.}(2007){Sebag}, {Barr}, {Saha}, {Claver}, \&
+  {Krabbendam}}]{sebag2007lsst}
+{Sebag}, J., {Barr}, J., {Saha}, A., {Claver}, C., \& {Krabbendam}, V. 2007, in
+  Revista Mexicana de Astronomia y Astrofisica Conference Series, Vol.~31,
+  Revista Mexicana de Astronomia y Astrofisica Conference Series, 30--35
+
+\bibitem[{{Sebag} {et~al.}(2008){Sebag}, {Krabbendam}, {Claver}, {Andrew},
+  {Barr}, \& {Klebe}}]{sebag2008lsst}
+{Sebag}, J., {Krabbendam}, V.~L., {Claver}, C.~F., {et~al.} 2008, in \procspie,
+  Vol. 7012, Ground-based and Airborne Telescopes II, 70123W
+
+\bibitem[{Shetrone {et~al.}(2007)Shetrone, Cornell, Fowler, Gaffney, Laws,
+  Mader, Mason, Odewahn, Roman, Rostopchin, {et~al.}}]{shetrone2007ten}
+Shetrone, M., Cornell, M.~E., Fowler, J.~R., {et~al.} 2007, Publications of the
+  Astronomical Society of the Pacific, 119, 556
+
+\bibitem[{{Steele} \& {Carter}(1997)}]{steele1997control}
+{Steele}, I.~A., \& {Carter}, D. 1997, in \procspie, Vol. 3112, Telescope
+  Control Systems II, ed. H.~{Lewis}, 222--233
+
+\bibitem[{Storn \& Price(1997)}]{storn1997differential}
+Storn, R., \& Price, K. 1997, Journal of global optimization, 11, 341
+
+\bibitem[{Tesauro(1995)}]{tesauro1995temporal}
+Tesauro, G. 1995, Communications of the ACM, 38, 58
+
+\bibitem[{{The Astropy Collaboration} {et~al.}(2018){The Astropy
+  Collaboration}, {Price-Whelan}, {Sip{\H o}cz}, {G{\"u}nther}, {Lim},
+  {Crawford}, {Conseil}, {Shupe}, {Craig}, {Dencheva}, {Ginsburg},
+  {VanderPlas}, {Bradley}, {P{\'e}rez-Su{\'a}rez}, {de Val-Borro}, {Aldcroft},
+  {Cruz}, {Robitaille}, {Tollerud}, {Ardelean}, {Babej}, {Bachetti}, {Bakanov},
+  {Bamford}, {Barentsen}, {Barmby}, {Baumbach}, {Berry}, {Biscani}, {Boquien},
+  {Bostroem}, {Bouma}, {Brammer}, {Bray}, {Breytenbach}, {Buddelmeijer},
+  {Burke}, {Calderone}, {Cano Rodr{\'{\i}}guez}, {Cara}, {Cardoso},
+  {Cheedella}, {Copin}, {Crichton}, {D{\'A}vella}, {Deil}, {Depagne},
+  {Dietrich}, {Donath}, {Droettboom}, {Earl}, {Erben}, {Fabbro}, {Ferreira},
+  {Finethy}, {Fox}, {Garrison}, {Gibbons}, {Goldstein}, {Gommers}, {Greco},
+  {Greenfield}, {Groener}, {Grollier}, {Hagen}, {Hirst}, {Homeier}, {Horton},
+  {Hosseinzadeh}, {Hu}, {Hunkeler}, {Ivezi{\'c}}, {Jain}, {Jenness}, {Kanarek},
+  {Kendrew}, {Kern}, {Kerzendorf}, {Khvalko}, {King}, {Kirkby}, {Kulkarni},
+  {Kumar}, {Lee}, {Lenz}, {Littlefair}, {Ma}, {Macleod}, {Mastropietro},
+  {McCully}, {Montagnac}, {Morris}, {Mueller}, {Mumford}, {Muna}, {Murphy},
+  {Nelson}, {Nguyen}, {Ninan}, {N{\"o}the}, {Ogaz}, {Oh}, {Parejko}, {Parley},
+  {Pascual}, {Patil}, {Patil}, {Plunkett}, {Prochaska}, {Rastogi}, {Reddy
+  Janga}, {Sabater}, {Sakurikar}, {Seifert}, {Sherbert}, {Sherwood-Taylor},
+  {Shih}, {Sick}, {Silbiger}, {Singanamalla}, {Singer}, {Sladen}, {Sooley},
+  {Sornarajah}, {Streicher}, {Teuben}, {Thomas}, {Tremblay}, {Turner},
+  {Terr{\'o}n}, {van Kerkwijk}, {de la Vega}, {Watkins}, {Weaver}, {Whitmore},
+  {Woillez}, \& {Zabalza}}]{astropy18}
+{The Astropy Collaboration}, {Price-Whelan}, A.~M., {Sip{\H o}cz}, B.~M.,
+  {et~al.} 2018, ArXiv e-prints.
+\newblock \doarXiv{1801.02634}
+
+\bibitem[{Tsitsiklis \& Van~Roy(1997)}]{tsitsiklis1997analysis}
+Tsitsiklis, J.~N., \& Van~Roy, B. 1997, in Advances in neural information
+  processing systems, 1075--1081
+
+\bibitem[{{Wootten}(2003)}]{wootten2003atacama}
+{Wootten}, A. 2003, in \procspie, Vol. 4837, Large Ground-based Telescopes, ed.
+  J.~M. {Oschmann} \& L.~M. {Stepp}, 110--118
+
+\bibitem[{{Yoachim} {et~al.}(2016){Yoachim}, {Coughlin}, {Angeli}, {Claver},
+  {Connolly}, {Cook}, {Daniel}, {Ivezi{\'c}}, {Jones}, {Petry}, {Reuter},
+  {Stubbs}, \& {Xin}}]{yoachim2016optical}
+{Yoachim}, P., {Coughlin}, M., {Angeli}, G.~Z., {et~al.} 2016, in \procspie,
+  Vol. 9910, Observatory Operations: Strategies, Processes, and Systems VI,
+  99101A
+
+\end{thebibliography}
